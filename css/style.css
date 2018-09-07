@@ -69,7 +69,7 @@ a {
   transition: all 150ms ease;
   line-height: inherit;
 }
-#navigation ul li a:active {
+#navigation ul li:active {
   color: #A4DEFB;
 }
 #navigation ul li a:hover {
