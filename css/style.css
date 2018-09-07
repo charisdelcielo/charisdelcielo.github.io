@@ -332,15 +332,15 @@ footer .contact-form .form-group label {font-size: 13px;font-weight: 700;letter-
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-social,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {padding: 0 15px; font-weight: 600;letter-spacing: 2px;}
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {font-size: 13px;color: #fff;margin-bottom: 10px;}
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {font-size: 16px;margin-bottom: 3px;}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {display:none;}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {display: none;}
 
 
 .portfolio-box:hover .portfolio-box-caption {opacity: 1;background: rgba(0, 0, 0, 0.3);}
 .portfolio-box:hover .portfolio-box-caption .portfolio-box-caption-content .project-social{opacity: 1;height: auto;}
-.portfolio-box:hover .portfolio-box-caption .portfolio-box-caption-content .project-category,
-.portfolio-box:hover .portfolio-box-caption .portfolio-box-caption-content .project-name{display: none;}
+.portfolio-box:hover .portfolio-box-caption .portfolio-box-caption-content .project-category{font-size: 13px;color: #fff;margin-bottom: 10px;},
+.portfolio-box:hover .portfolio-box-caption .portfolio-box-caption-content .project-name{font-size: 16px;margin-bottom: 3px;}
+.portfolio-box:hover .portfolio-box-caption .portfolio-box-caption-content .project-name {padding: 0 15px; font-weight: 600;letter-spacing: 2px;}
 
 @media(min-width:768px) {
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {font-size: 15px;}
