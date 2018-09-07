@@ -193,7 +193,7 @@ strong {
 #menu .dropdown-inner a {min-width: 160px;display: block;padding: 3px 20px;clear: both;line-height: 20px;color: #000;margin: 0 5px;}
 #menu li.dropdown:hover>a, #menu li.dropdown:focus>a, #menu li.dropdown:active>a{color: #ec495e;background: none;}
 .navbar{margin: 0;}
-#menu ul.nav li{}
+#menu ul.nav li{display: inline;}
 #menu ul.nav li a{padding: 18px 10px;color: #969696;letter-spacing: 2px;font-size: 14px;background-color: transparent;font-weight: 700;}
 #menu ul.nav li.active a{background: #fff;color: #1e252d;}
 #menu ul.nav li.dropdown a{}
