@@ -82,7 +82,7 @@ hr.line { margin: 15px auto; padding: 0; max-width: 90px;border: 0; border-top: 
 .social-link{text-align: center;}
 .social-link li{}
 .social-link li a{height: 37px; width: 37px;border-radius: 50%;display:block;color: #333;font-size: 19px;padding-top: 6px;border: 1px solid #333;background: #fff;}
-.social-link li a:hover{background: transparent;color: #fff;border: 1px solid #fff;}
+.social-link li a:hover{background: transparent;color: #969696;border: 1px solid #fff;}
 
 /* --Page-- */
 body.index-page {}
@@ -167,13 +167,13 @@ header.page-header{}
 /* ---------------------------------------------------------------------------- */
 #menu {border-radius: 0; border: none;}
 
-#menu a.navbar-brand:hover{color: #fff;}
+#menu a.navbar-brand:hover{color: #969696;}
 #menu .navbar-brand{margin: 0;height: auto;padding: 0px 18px;}
 #menu .logo {}
 #menu .dropdown-menu {background-color: #2B2D3F;border:none;border-radius: 0;}
 
 #menu .navbar-collapse{padding: 0;background: rgba(255, 255, 255, 0.2)}
-#menu ul.nav .dropdown-menu li a{color: #fff;}
+#menu ul.nav .dropdown-menu li a{color: #969696;}
 #menu ul.nav .dropdown-menu li a:hover{color: #ec495e;}
 #menu .dropdown-inner {display: table;}
 #menu .dropdown-inner ul {display: table-cell;}
