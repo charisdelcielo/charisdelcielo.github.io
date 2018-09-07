@@ -105,7 +105,7 @@ body .wrap-body {
 /* ---------------------------------------------------------------------------- */
 #intro {font-family: "Didot";font-weight: 300;position: relative;margin: 80px auto;width: 600px;font-size: 30px;text-align: center;color: #fff;}
 
-.line-2 {font-family: 'GFS Didot', serif; font-weight: 400;font-size: 90px;letter-spacing: 15px;margin: 0 0;}
+.line-2 {font-family: 'GFS Didot', serif; font-weight: 400;font-size: 90px;letter-spacing: 10px;margin: 0 0;}
 .line-3 {font-family: 'GFS Didot', serif; font-weight: 700;font-size: 16px;margin: 70px 0 0;position: relative;letter-spacing: 6px;}
 
 
