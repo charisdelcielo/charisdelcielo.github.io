@@ -105,7 +105,7 @@ body .wrap-body {
 /* ---------------------------------------------------------------------------- */
 #intro {font-family: "Didot";font-weight: 300;position: relative;margin: 80px auto;width: 600px;font-size: 30px;text-align: center;color: #fff;}
 
-.line-2 {font-family: 'GFS Didot', serif; font-weight: 400;font-size: 70px;margin: 70px 0 0;letter-spacing: 6px;}
+.line-2 .line-2 {font-family: 'GFS Didot', serif; font-weight: 400;font-size: 90px;letter-spacing: 15px;margin: 0 0;}
 .line-3 {font-family: 'GFS Didot', serif; font-weight: 700;font-size: 16px;margin: 70px 0 0;position: relative;letter-spacing: 6px;}
 .line-3:before, .line-3:after {content: " ";position: absolute;width: 50px;height: 5px;border-top: 1px solid #fff;border-bottom: 1px solid #fff;}
 .line-3:before {margin: 7px 0 0 -60px;}
@@ -367,7 +367,7 @@ footer .contact-form .form-group label {font-size: 13px;font-weight: 700;letter-
 .btn.active, 
 .btn:active {background-image: none;box-shadow: none;outline: 0 none;}
 
-.btn-skin {padding: 11px 22px;color: #1a1c1e;border: 2px solid #1a1c1e;font-size: 15px; letter-spacing: 2.3px;font-weight: 700;background: #fff;margin: 10px 0;}
+.btn-skin {padding: 11px 22px;color: #1a1c1e;border: 1px solid #1a1c1e;font-size: 15px; letter-spacing: 1.5px;font-weight: 700;background: #fff;margin: 10px 0;}
 .btn-skin i.fa{padding-left: 5px;}
 .btn-skin:hover, .btn-skin:focus {color: #fff;background-color: #1a1c1e;}
 
