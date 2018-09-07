@@ -90,12 +90,15 @@ body.single-page {}
 body.single-page .portfolio-box {max-width: 100%;margin: 20px 0;}
 
 
-body {
-  background: #eee;
-  margin: 0;
-  padding: 0;
-  font-family: "Source Sans Pro", sans-serif;
-  color: #333;
+body .wrap-body {
+	background-color: #fff;
+	background-position: center center;
+	background-repeat: no-repeat;
+    	background-attachment: fixed;
+    	background-size: cover;
+	overflow: hidden;
+    	position: relative;
+	height: 100%;
 }
 
 /* ---------------------------------------------------------------------------- */
