@@ -89,15 +89,13 @@ body.index-page {}
 body.single-page {}
 body.single-page .portfolio-box {max-width: 100%;margin: 20px 0;}
 
-body .wrap-body {
-	background-color: #fff;
-	background-position: center center;
-	 background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-	overflow: hidden;
-    position: relative;
-	height: 100%;
+
+body {
+  background: #eee;
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #333;
 }
 
 /* ---------------------------------------------------------------------------- */
@@ -428,18 +426,6 @@ footer .contact-form .form-group label {font-size: 13px;font-weight: 700;letter-
 	.pd-small-lg{padding: 40px 30px;}
 }
 
-/* ---------------------------------------------------------------------------- */
-/* --------------------------------Triangle------------------------------------ */
-/* ---------------------------------------------------------------------------- */
-.triangle-left,
-.triangle-right{position: relative;}
-
-.triangle-left::before {border-bottom: 30px solid transparent;border-right: 30px solid #fff;border-top: 30px solid transparent;content: " ";height: 0;width: 0;left: -30px;position: absolute;top: calc(50% - 30px);}
-.triangle-right::before {border-bottom: 30px solid transparent;border-left: 30px solid #fff;border-top: 30px solid transparent;content: " ";height: 0;width: 0;position: absolute;right: -30px;top: calc(50% - 30px);}
-@media (max-width: 767px){
-	.triangle-left::before {left: calc(50% - 30px);top: -45px;transform: rotate(90deg);}
-	.triangle-right::before {right: calc(50% - 30px);position: absolute;top: -45px;transform: rotate(-90deg);}
-}
 
 /* ---------------------------------------------------------------------------- */
 /* --------------------------------Flex-Box------------------------------------ */
