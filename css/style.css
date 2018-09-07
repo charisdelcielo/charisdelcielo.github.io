@@ -100,5 +100,22 @@ img:hover {
   opacity: 0.75;
 }
 
+.gallery ul li {
+  padding-bottom: 1em;
+}
+
+.item {
+  max-width: 50%;
+  float: left;
+  margin-bottom: 1em;
+  display: block;
+}
+
+.item:nth-of-type(2n+1) {
+  clear: left;
+}
+
+
+
 
 
