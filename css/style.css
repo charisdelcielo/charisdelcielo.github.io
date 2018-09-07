@@ -320,7 +320,7 @@ footer .contact-form .form-group label {font-size: 13px;font-weight: 700;letter-
 /* ---------------------------------------------------------------------------- */
 /* ------------------------------Portfolio Box--------------------------------- */
 /* ---------------------------------------------------------------------------- */	
-.portfolio-box {display: block;position: relative;margin: auto;overflow: hidden;max-width: 500px}
+.portfolio-box {display: block;position: relative;margin: auto;overflow: hidden;max-width: 800px}
 
 /****** Zoom Effect ******/
 .portfolio-box.zoom-effect .portfolio-box-caption{background: rgba(0, 0, 0,.45);}
@@ -333,13 +333,9 @@ footer .contact-form .form-group label {font-size: 13px;font-weight: 700;letter-
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-social,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {padding: 0 15px; font-weight: 600;letter-spacing: 2px;}
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {font-size: 13px;color: #333856;margin-bottom: 10px;}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {font-size: 13px;color: #fff;margin-bottom: 10px;}
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {font-size: 16px;margin-bottom: 3px;}
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-social{transition: all 1s ease;opacity: 0; height: 0;overflow: hidden;}
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-social i.fa{font-size: 25px;}
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-social ul li{margin: 20px 5px 0;}
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-social ul li a{display: block;width: 48px;height: 48px;color: #333856;background: #fff;transition-duration: 0.3s;padding-top: 12px;border-radius: 50%;text-shadow: none;}
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-social ul li a:hover{color: #fff;background-color: #333856;}
+
 
 .portfolio-box:hover .portfolio-box-caption {opacity: 1;background: none;}
 .portfolio-box:hover .portfolio-box-caption .portfolio-box-caption-content .project-social{opacity: 1;height: auto;}
