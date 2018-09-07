@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=GFS+Didot");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+
 body {
   background-color: #eee;
   background-blend-mode: hard-light;
@@ -72,4 +73,19 @@ a {
   min-height: 300%;
   font-size: 20px;
 }
+
+img {
+  display: block;
+  vertical-align: middle;
+  width: 100%;
+  -webkit-transition: opacity 0.3s ease-out;
+  -o-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+}
+
+img:hover {
+  opacity: 0.75;
+}
+
+
 
