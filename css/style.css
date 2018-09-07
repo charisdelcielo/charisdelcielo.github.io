@@ -186,11 +186,8 @@ strong {
 #menu .dropdown-menu {background-color: #2B2D3F;border:none;border-radius: 0;}
 
 #menu .navbar-collapse{padding: 0;background: rgba(255, 255, 255, 0.2)}
-#menu ul.nav .dropdown-menu li a{color: #969696;}
+#menu ul.nav .dropdown-menu li a{color: #969696; display: inline-block;}
 #menu ul.nav .dropdown-menu li a:hover{color: #ec495e;}
-#menu .dropdown-inner {display: table;}
-#menu .dropdown-inner ul {display: table-cell;}
-#menu .dropdown-inner a {min-width: 160px;display: block;padding: 3px 20px;clear: both;line-height: 20px;color: #000;margin: 0 5px;}
 #menu li.dropdown:hover>a, #menu li.dropdown:focus>a, #menu li.dropdown:active>a{color: #ec495e;background: none;}
 .navbar{margin: 0;}
 #menu ul.nav li{display: inline;}
