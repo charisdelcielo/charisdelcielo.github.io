@@ -6,7 +6,7 @@ Free Bootstrap Themes : http://www.Html5xCss3.com
 /* ==== Google font ==== */
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=GFS+Didot"|Didot); 
-@import url(http://fonts.googleapis.com/css?family=PT+Sans:700|Pacifico|Changa+One);
+@import url('http://fonts.googleapis.com/css?family=PT+Sans:700'|Pacifico|Changa+One);
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900');
@@ -126,7 +126,7 @@ header h1 {
 }
 
 .container {
-  width: 40%;
+  width: 100%;
   margin: 50px auto;
 }
 
