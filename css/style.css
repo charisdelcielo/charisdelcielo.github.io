@@ -90,7 +90,7 @@ body.single-page {}
 body.single-page .portfolio-box {max-width: 100%;margin: 20px 0;}
 
 body .wrap-body {
-	background-image: url(../images/bg.jpg);
+	background-color: #fff;
 	background-position: center center;
 	 background-repeat: no-repeat;
     background-attachment: fixed;
