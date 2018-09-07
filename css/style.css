@@ -13,7 +13,10 @@ Free Bootstrap Themes : http://www.Html5xCss3.com
 /* ---------------------------------------------------------------------------- */
 /* ------------------------------------Html-Body------------------------------- */
 /* ---------------------------------------------------------------------------- */
-body {font-family: 'Source Sans Pro', sans-serif;font-weight: 400;color: #666;background-color: #fff;font-size: 15px;line-height: 24px;hyphens: auto;overflow-wrap: break-word;}
+body {
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-size:14px;
+}
 html, body {width:100%; padding:0; margin:0;}
 
 /* ---------------------------------------------------------------------------- */
@@ -30,7 +33,7 @@ h4 {font-size: 28px;}
 h5 {font-size: 24px;}
 h6 {font-size: 20px;}
 
-h1,h2,h3,h4,h5,h6 {font-weight: 700;color: #111;line-height: 1.1;font-family: 'GFS Didot', serif;}
+h1,h2,h3,h4,h5,h6 {font-weight: 700;color: #111;line-height: 1.1; font-family: 'GFS Didot', serif;}
 
 p {margin: 0 0 20px;}
 
@@ -461,9 +464,9 @@ footer .contact-form .form-group label {font-size: 13px;text-transform: uppercas
 /* Box Text */
 .flex-box .box-text {-moz-justify-content: center;-webkit-justify-content: center;-ms-justify-content: center;justify-content: center;-moz-align-items: center;-webkit-align-items: center;-ms-align-items: center;align-items: center;/* display: flex; */}
 .flex-box .box-text .box-text-inner{margin: 0 auto;max-width: 100%;}
-.flex-box .box-text .box-text-inner p{font-size: 18px;font-weight: 300;color: #000;}
+.flex-box .box-text .box-text-inner p{font-family: 'GFS Didot', serif;font-size: 18px;font-weight: 300;color: #000;}
 .flex-box .box-text .title {}
-.flex-box .box-text .title h3{font-weight: 700;color: #000;text-transform: uppercase;font-family: 'Playfair Display', serif;letter-spacing: 3px;}
+.flex-box .box-text .title h3{font-weight: 700;color: #000;text-transform: uppercase;font-family: 'GFS Didot', serif;letter-spacing: 3px;}
 .flex-box .box-text .title span{font-size: 24px; font-weight:800;color: #000;text-transform: uppercase;margin: 40px 0 20px;display: block;}
 
 .flex-box .box-text.light-style{background: #fff;}
