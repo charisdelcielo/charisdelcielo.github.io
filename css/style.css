@@ -107,35 +107,27 @@ body .wrap-body {
 
 .line-2 .line-2 {font-family: 'GFS Didot', serif; font-weight: 400;font-size: 90px;letter-spacing: 15px;margin: 0 0;}
 .line-3 {font-family: 'GFS Didot', serif; font-weight: 700;font-size: 16px;margin: 70px 0 0;position: relative;letter-spacing: 6px;}
-.line-3:before, .line-3:after {content: " ";position: absolute;width: 50px;height: 5px;border-top: 1px solid #fff;border-bottom: 1px solid #fff;}
-.line-3:before {margin: 7px 0 0 -60px;}
-.line-3:after {margin: 7px 0 0 10px;}
+
 
 @media(max-width:992px){
 	#intro{width: 500px;}
 	.line-2{font-size: 80px;letter-spacing: 4px;}
 	.line-3{font-size: 14px;margin: 60px 0 0;letter-spacing: 4px;}
-	.line-3:before, .line-3:after {width: 40px;}
-	.line-3:before {margin: 5px 0 0 -50px;}
-	.line-3:after {margin: 5px 0 0 10px;}
+	
 }
 
 @media(max-width:767px){
 	#intro{width: 350px;}
 	.line-2{font-size: 70px;letter-spacing: 10px;}
 	.line-3{font-size: 13px;margin: 50px 0 0;letter-spacing: 3px;}
-	.line-3:before, .line-3:after {width: 30px;}
-	.line-3:before {margin: 4px 0 0 -40px;}
-	.line-3:after {margin: 4px 0 0 10px;}
+	
 }
 
 @media(max-width:500px){
 	#intro{width: 250px;}
 	.line-2{font-size: 50px;letter-spacing: 8px;}
 	.line-3{font-size: 12px;margin: 40px 0 0;letter-spacing: 3px;}
-	.line-3:before, .line-3:after {width: 20px;}
-	.line-3:before {margin: 4px 0 0 -30px;}
-	.line-3:after {margin: 4px 0 0 10px;}
+
 }
 
 header.page-header{}
