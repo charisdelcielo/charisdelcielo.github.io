@@ -126,6 +126,42 @@ img:hover {
 }
 
 
+.gallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.gallery ul li {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 calc(50% - 1em);
+  flex: 0 1 calc(50% - 1em);
+  -ms-flex-preferred-size: calc(50% - 1em);
+  flex-basis: calc(50% - 1em);
+}
+
+@media (max-width: 824px) {
+
+  .gallery ul {
+    grid-template-columns: 100%;
+  }
+
+  .gallery ul li {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+
+  .item {
+    max-width: 100%;
+    float: none;
+  }
+}
+
 
 
 
