@@ -5,6 +5,7 @@ Free Bootstrap Themes : http://www.Html5xCss3.com
 
 /* ==== Google font ==== */
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=GFS+Didot"|Didot); 
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:700|Pacifico|Changa+One);
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900');
@@ -99,7 +100,7 @@ body .wrap-body {
 /* ---------------------------------------------------------------------------- */
 /* ------------------------------------Header---------------------------------- */
 /* ---------------------------------------------------------------------------- */
-#intro {font-family: "Pacifico", cursive;font-weight: 400;position: relative;margin: 80px auto;width: 600px;font-size: 30px;text-align: center;color: #fff;}
+#intro {font-family: "Didot", cursive;font-weight: 400;position: relative;margin: 80px auto;width: 600px;font-size: 30px;text-align: center;color: #fff;}
 #intro span {display: block;line-height: 1.3}
 
 .line-1 {position: relative;}
