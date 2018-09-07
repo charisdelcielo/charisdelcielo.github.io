@@ -181,10 +181,10 @@ header.page-header{}
 #menu li.dropdown:hover>a, #menu li.dropdown:focus>a, #menu li.dropdown:active>a{color: #ec495e;background: none;}
 .navbar{margin: 0;}
 #menu ul.nav li{}
-#menu ul.nav li a{padding: 18px 45px;color: #fff;letter-spacing: 2px;font-size: 14px;background-color: transparent;font-weight: 700;}
+#menu ul.nav li a{padding: 18px 45px;color: #969696;letter-spacing: 2px;font-size: 14px;background-color: transparent;font-weight: 700;}
 #menu ul.nav li.active a{background: #fff;color: #1e252d;}
 #menu ul.nav li.dropdown a{}
-#menu .nav > li > a:hover, #menu .nav > li > a:focus{color:#969696;background-color: rgba(255, 255, 255, 0.2);}
+#menu .nav > li > a:hover, #menu .nav > li > a:focus{color:#d80000;background-color: rgba(255, 255, 255, 0.2);}
 
 #menu .btn-navbar {font-size: 20px;color: #FFF;padding: 4px 12px;float: right;border: 2px solid #fff;}
 
