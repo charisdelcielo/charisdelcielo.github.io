@@ -115,6 +115,16 @@ img:hover {
   clear: left;
 }
 
+.gallery {
+  grid-area: gallery;
+}
+
+.gallery ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-gap: 1em;
+}
+
 
 
 
