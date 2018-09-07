@@ -107,7 +107,7 @@ body .wrap-body {
 
 header {
   width: 100%;
-  padding: 40px 0;
+  text-align: center;
   background: #fff;
   border-bottom: 1px solid #e1e1e1;
   /* animation magic */
