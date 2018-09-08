@@ -13,7 +13,7 @@ Free Bootstrap Themes : http://www.Html5xCss3.com
 @import url("https://fonts.googleapis.com/css?family=GFS+Didot");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 
-@import "compass/css3";
+
 
 body {
   background-color: #fff;
@@ -29,6 +29,7 @@ a {
 }
 
 #header {
+z-index: 1;
   position: relative;
   width: 100%;
   height: 180px;
