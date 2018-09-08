@@ -11,33 +11,6 @@ $(document).ready(function () {
 
 
 
-
-$(function() {
-    var i = "box",
-        n = {
-            init: function() {
-                this.scroll_animate(), $("#b2top").click(function() {
-                    $("html, body").stop().animate({
-                        scrollTop: 0
-                    })
-                }), $("#overview-aside-nav ul").navscroll({
-                    sec: 1e3,
-                    url_hash: !1,
-                    head_hight: 0
-                }), $("#overview-mainnav").navscroll({
-                    sec: 1e3,
-                    url_hash: !1,
-                    head_hight: 0
-                })
-            },
-            scroll_animate: function() {
-                $(window).scroll(function() {
-                    for (var i = window.innerHeight, n = $(".anim").length, o = 0; o < n; o++) $(window).scrollTop() > $(".anim").eq(o).offset().top - i / 4 && $(".anim").eq(o).addClass("on")
-                })
-            },
-        };
-    n.init()
-});
 (function($){
 	/* --------------------------------------------------
   Contact Pages
