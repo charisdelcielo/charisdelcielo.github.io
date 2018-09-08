@@ -13,9 +13,10 @@ Free Bootstrap Themes : http://www.Html5xCss3.com
 @import url("https://fonts.googleapis.com/css?family=GFS+Didot");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 
+@import "compass/css3";
 
 body {
-  background-color: #eee;
+  background-color: #fff;
   background-blend-mode: hard-light;
   font-size: 10pt;
   font-family: 'GFS Didot', serif;
@@ -30,10 +31,11 @@ a {
 #header {
   position: relative;
   width: 100%;
-  height: 130px;
+  height: 180px;
   background: #fff;
   display: table;
 }
+
 #header h1 {
   display: table-cell;
   vertical-align: middle;
@@ -42,6 +44,16 @@ a {
   color: #000;
   font-weight: 600;
   text-align: center;
+  letter-spacing:1.3px;
+}
+
+#header p {
+    margin-top: 25px;
+    font-size: 12pt;
+    color: #000;
+    font-weight: 10;
+    text-align: center;
+    letter-spacing:0.6px;
 }
 
 #navigation {
@@ -51,29 +63,45 @@ a {
   background: #fff;
   text-align: center;
   line-height: 50px;
+  z-index: 1;
+  border-bottom-style: solid;
+  border-bottom-color: #C8C8C8;
+  border-bottom-width: 0.7px;
 }
+
 #navigation ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-content: center;
   align-items: center;
+  list-style: none;
+  z-index: 1;
 }
-#navigation ul li a {
+
+#navigation ul > li > a {
   font-family: 'GFS Didot', serif;
+  letter-spacing:0.6px;
   color: #000;
   height: inherit;
-  padding: 0 30px;
+  padding: 0 40px;
+  font-weight: 500;
   display: inline-block;
   transition: all 150ms ease;
   line-height: inherit;
 }
-#navigation ul li a:active {
-  color: #A4DEFB;
+
+#navigation ul > .active  {
+    color: #A4DEFB;
+    background: #F4F4F4;
 }
+
+
 #navigation ul li a:hover {
-  color: #d80000;
+  color: #A4DEFB;
+  text-decoration: none;
 }
+
 #navigation.fixed {
   position: fixed;
   top: 0;
@@ -84,20 +112,23 @@ a {
 #container {
   min-height: 300%;
   font-size: 20px;
+  margin-top: 10px;
+  text-align: center;
 }
 
 
 img {
   display: block;
   vertical-align: middle;
-  width: 100%;
+  width: 90%;
   -webkit-transition: opacity 0.3s ease-out;
   -o-transition: opacity 0.3s ease-out;
   transition: opacity 0.3s ease-out;
 }
 
 img:hover {
-  opacity: 0.75;
+  opacity: 0.4;
+  
 }
 
 .gallery ul li {
@@ -109,6 +140,7 @@ img:hover {
   float: left;
   margin-bottom: 1em;
   display: block;
+  
 }
 
 .item:nth-of-type(2n+1) {
@@ -145,6 +177,8 @@ img:hover {
   flex-basis: calc(50% - 1em);
 }
 
+
+
 @media (max-width: 824px) {
 
   .gallery ul {
@@ -160,6 +194,116 @@ img:hover {
     max-width: 100%;
     float: none;
   }
+  
+  .pulse-button {
+      max-width: 40%;
+  }
+  
+  .pulse-button2 {
+      max-width: 40%;
+  }
+}
+
+.dynamic-content {
+    display:none;
+}
+
+.container {
+    width: 300px;
+    height: 100%;
+    margin: 0 auto 0;
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+    background: #fff;
+
+}
+
+.pulse-button {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: 100px;
+    display: block;
+    width: 70px;
+    height: 70px;
+    font-size: 14px;
+    font-weight: light;
+    font-family: 'GFS Didot', serif;
+    text-align: center;
+    line-height: 70px;
+    letter-spacing: 0px;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    background: #A4DEFB;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 rgba(#A4DEFB, .5);
+    -webkit-animation: pulse 1.5s infinite;
+}
+.pulse-button:hover {
+    -webkit-animation: none;
+}
+
+@-webkit-keyframes pulse{
+    0% {
+        -webkit-transform:scale(0.9, 0.9);
+    }
+    70% {
+        -webkit-transform:scale(1, 1);
+        box-shadow: 0 0 0 5px rgba(#000, 0);
+    }
+    100% {
+        -webkit-transform:scale(0.9, 0.9);
+        box-shadow: 0 0 0 0 rgba(#000, 0);
+    }
+}
+
+.pulse-button2 {
+    position: sticky;
+    top: 50%;
+    left: 120%;
+    margin-left: -50px;
+    margin-top: 100px;
+    display: block;
+    width: 70px;
+    height: 70px;
+    font-size: 13px;
+    font-weight: light;
+    font-family: 'GFS Didot', serif;
+    text-align: center;
+    line-height: 70px;
+    letter-spacing: 0px;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    background: #DF3333;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 rgba(#A4DEFB, .5);
+    -webkit-animation: pulse 1.5s infinite;
+}
+.pulse-button2:hover {
+    -webkit-animation: none;
+}
+
+
+#me {
+    position:fixed;
+    bottom:0px;
+    margin-left: 30px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+#me img:hover {
+    opacity: 1.0;
+}
+
+#topofme {
+    font-size: 16px;
+    margin-left: 60px;
+    margin-top: 20px;
 }
 
 

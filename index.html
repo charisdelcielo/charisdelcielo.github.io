@@ -21,25 +21,31 @@
 		</head>
 
 		<header id="header">
-			<h1>Charis Ryu</h1>
+			<h1>Charis Ryu<br>
+            <p>I will first be a user, then a designer.</p>
+            </h1>    
 		</header>
+        
 		<nav id="navigation">
+        
 			<ul>
-				<li class="active"><a href="index.html">Work</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#">Contact</a></li>
+				<li class = "active"><a href="index.html">Work</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="contact.html">Contact</a></li>
 			</ul>
+            
+            
 		</nav>
 
 		<body>
+        
+        <!--Dynamic Section 0-->
+        <div id = "default-content" class = "dynamic content">
+        
 		<main id="container">
 			<section class="container">
-			<p><strong>Scroll down to see the magic in action...</strong></p>
-		<p>
-		Sed nulla cred Banksy jean shorts. Reprehenderit mumblecore incididunt anim accusamus. Keffiyeh Cosby sweater in cornhole elit, tote bag cillum banjo. Shabby chic YOLO banh mi sunt. Artisan blog Neutra, polaroid adipisicing Banksy +1 lo-fi umami distillery fixie seitan. Semiotics artisan flannel mollit craft beer Blue Bottle. Bespoke biodiesel banh mi literally.
-		</p>
-				
+            </container>
 		</main>
 		
 		<section class="gallery">
@@ -47,7 +53,7 @@
 		      <li class="item">
 			<div class="info">
 			  <a href="#" title="Project Title">
-			    <img src="https://source.unsplash.com/hnEtVqVlVZU">
+			    <img id = "opico" src="https://source.unsplash.com/hnEtVqVlVZU" onclick="showOpico()">
 			  </a>
 			  <h3>Project Title</h3>
 			  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -56,7 +62,7 @@
 		      <li class="item">
 			<div class="info">
 			  <a href="#" title="Project Title">
-			    <img src="https://source.unsplash.com/RPzWI0rolS8">
+			    <img id="spotibuddy" src="https://source.unsplash.com/RPzWI0rolS8" onclick="showSpotibuddy()">
 			  </a>
 			  <h3>Project Title</h3>
 			  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -65,7 +71,7 @@
 		      <li class="item">
 			<div class="info">
 			  <a href="#" title="Project Title">
-			    <img src="https://source.unsplash.com/i1S4n4yQUKM">
+			    <img id="split" src="https://source.unsplash.com/i1S4n4yQUKM" onclick="showSplit()">
 			  </a>
 			  <h3>Project Title</h3>
 			  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -74,7 +80,7 @@
 		      <li class="item">
 			<div class="info">
 			  <a href="#" title="Project Title">
-			    <img src="https://source.unsplash.com/QgHvLSuIcLs">
+			    <img id="wifi" src="https://source.unsplash.com/QgHvLSuIcLs" onclick="showWifi()">
 			  </a>
 			  <h3>Project Title</h3>
 			  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -97,12 +103,91 @@
 			  <h3>Project Title</h3>
 			  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 			</div>
-		      </li>
-		    </ul>
-		  </section>	
-		
-			
+            </li>
+            </ul>
+        </section>
+        </div>
+        
+        <!--Dynamic Section 1-->
+        <div id = "opicopage" class="dynamic-content">
+                    <h1>OPICO</h1>
+                    <p class="why-text">Search Marketing Group is a leader in creating unique Seo&nbsp;strategies that would help your website rank on page 1 of
+                    Google for your most competitive keywords in your niche. We pride ourself on creating custom solutions for&nbsp;businesses and
+                    making it work for them. </p>
+                    
+                    <p id="spotibuddy" onclick="showSpotibuddy()"> Spotibuddy </p>
+                    <p id="split" onclick="showSplit()"> $plit </p>
+                    <p id="wifi" onclick="showWifi()"> Touch your Wifi </p>
+                    
+                </div>
+        <!--Dynamic Section 2-->
+        <div id = "spotibuddypage" class="dynamic-content">
+                    <h3>Spotibuddy</h3>
+                    <p class="why-text">Search Marketing Group is a leader in creating unique Seo&nbsp;strategies that would help your website rank on page 1 of
+                    Google for your most competitive keywords in your niche. We pride ourself on creating custom solutions for&nbsp;businesses and
+                    making it work for them. </p>
+                </div>
+        
+        <!--Dynamic Section 3-->
+        <div id = "splitpage" class="dynamic-content">
+            <h3>$plit</h3>
+                    <p class="why-text">Search Marketing Group is a leader in creating unique Seo&nbsp;strategies that would help your website rank on page 1 of
+                    Google for your most competitive keywords in your niche. We pride ourself on creating custom solutions for&nbsp;businesses and
+                    making it work for them. </p>
+        </div>
+        <!--Dynamic Section 4-->
+        <div id = "wifipage" class="dynamic-content">
+                <h3>Touch Your Wifi</h3>
+                    <p class="why-text">Search Marketing Group is a leader in creating unique Seo&nbsp;strategies that would help your website rank on page 1 of
+                    Google for your most competitive keywords in your niche. We pride ourself on creating custom solutions for&nbsp;businesses and
+                    making it work for them. </p>
+                </div>
+            </div>
+
 		<script src="js/main.js"></script>
+        <script>
+            function showDefault() {
+                $('#opicopage').hide();
+                $('#default-content').show();
+                $('#spotibuddypage').hide();
+                $('#splitpage').hide();
+                $('#wifipage').hide();
+            }
+        
+            function showOpico() {
+                $('#opicopage').show();
+                $('#default-content').hide();
+                $('#spotibuddypage').hide();
+                $('#splitpage').hide();
+                $('#wifipage').hide();
+            }
+        
+            function showSpotibuddy() {
+                $('#opicopage').hide();
+                $('#default-content').hide();
+                $('#spotibuddypage').show();
+                $('#splitpage').hide();
+                $('#wifipage').hide();
+            }
+        
+            function showSplit() {
+                $('#opicopage').hide();
+                $('#default-content').hide();
+                $('#spotibuddypage').hide();
+                $('#splitpage').show();
+                $('#wifipage').hide();
+            }
+        
+            function showWifi() {
+                $('#opicopage').hide();
+                $('#default-content').hide();
+                $('#spotibuddypage').hide();
+                $('#splitpage').hide();
+                $('#wifipage').show();
+            }
+        </script>
+      
+       
 	</body>
-/html>
+</html>
 			
