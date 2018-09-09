@@ -13,13 +13,14 @@ Free Bootstrap Themes : http://www.Html5xCss3.com
 @import url("https://fonts.googleapis.com/css?family=GFS+Didot");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 
+@font-face { font-family: DidotItalic; src: url('Didot Italic.ttf'); }
 
 
 body {
   background-color: #fff;
   background-blend-mode: hard-light;
   font-size: 10pt;
-  font-family: 'GFS Didot', serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 a {
@@ -29,7 +30,7 @@ a {
 }
 
 #header {
-z-index: 1;
+  z-index: 1;
   position: relative;
   width: 100%;
   height: 180px;
@@ -41,7 +42,7 @@ z-index: 1;
   display: table-cell;
   vertical-align: middle;
   font-size: 30pt;
-  font-family: 'GFS Didot', serif;
+  font-family: 'DidotItalic', serif;
   color: #000;
   font-weight: 600;
   text-align: center;
@@ -49,21 +50,22 @@ z-index: 1;
 }
 
 #header p {
+    font-family: 'Source Sans Pro', sans-serif;
     margin-top: 25px;
     font-size: 12pt;
     color: #000;
-    font-weight: 10;
+    font-weight: 300;
     text-align: center;
-    letter-spacing:0.6px;
+    letter-spacing:0.5px;
 }
 
 #navigation {
   position: relative;
   width: 100%;
-  height: 50px;
+  height: auto;
   background: #fff;
   text-align: center;
-  line-height: 50px;
+  line-height: 40px;
   z-index: 1;
   border-bottom-style: solid;
   border-bottom-color: #C8C8C8;
@@ -71,6 +73,7 @@ z-index: 1;
 }
 
 #navigation ul {
+    margin-top: 8px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -82,21 +85,20 @@ z-index: 1;
 
 #navigation ul > li > a {
   font-family: 'GFS Didot', serif;
-  letter-spacing:0.6px;
+  letter-spacing:0.4px;
   color: #000;
   height: inherit;
-  padding: 0 40px;
+  padding: 0 30px;
   font-weight: 500;
   display: inline-block;
   transition: all 150ms ease;
   line-height: inherit;
+
 }
 
-#navigation ul > .active  {
-    color: #A4DEFB;
-    background: #F4F4F4;
+#navigation ul .active a {
+    color: #A4DEFB !important;
 }
-
 
 #navigation ul li a:hover {
   color: #A4DEFB;
@@ -110,26 +112,79 @@ z-index: 1;
   right: 0;
 }
 
-#container {
-  min-height: 300%;
-  font-size: 20px;
-  margin-top: 10px;
-  text-align: center;
+.hvrbox,
+.hvrbox * {
+    box-sizing: border-box;
 }
 
+.hvrbox {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+}
 
-img {
-  display: block;
+.hvrbox img {
   vertical-align: middle;
-  width: 90%;
-  -webkit-transition: opacity 0.3s ease-out;
-  -o-transition: opacity 0.3s ease-out;
-  transition: opacity 0.3s ease-out;
+  width: 100%;
 }
 
-img:hover {
-  opacity: 0.4;
-  
+.hvrbox .hvrbox-layer_bottom {
+    display: block;
+}
+
+.hvrbox .hvrbox-layer_top {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 15px;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+    opacity: 1;
+}
+
+.hvrbox .hvrbox-text {
+    font-family: font-family: "Source Sans Pro", sans-serif;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 100;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.hvrbox .hvrbox-text_mobile {
+    font-family: font-family: "Source Sans Pro", sans-serif;
+    font-size: 13px;
+    font-weight: 100;
+    border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+    border-top: 1px solid rgba(179, 179, 179, 0.7);
+    margin-top: 5px;
+    padding-top: 2px;
+    display: none;
+}
+
+.hvrbox.active .hvrbox-text_mobile {
+    display: block;
 }
 
 .gallery ul li {
@@ -139,7 +194,7 @@ img:hover {
 .item {
   max-width: 50%;
   float: left;
-  margin-bottom: 1em;
+  margin-bottom:10px;
   display: block;
   
 }
@@ -150,6 +205,8 @@ img:hover {
 
 .gallery {
   grid-area: gallery;
+  margin-top:30px;
+  margin-right:40px;
 }
 
 .gallery ul {
@@ -224,7 +281,7 @@ img:hover {
     top: 50%;
     left: 50%;
     margin-left: -50px;
-    margin-top: 100px;
+    margin-top: 50px;
     display: block;
     width: 70px;
     height: 70px;
@@ -261,11 +318,12 @@ img:hover {
 }
 
 .pulse-button2 {
-    position: sticky;
+    position: relative;
     top: 50%;
-    left: 120%;
+    left:50%;
     margin-left: -50px;
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-bottom:50px;
     display: block;
     width: 70px;
     height: 70px;
@@ -283,18 +341,28 @@ img:hover {
     box-shadow: 0 0 0 0 rgba(#A4DEFB, .5);
     -webkit-animation: pulse 1.5s infinite;
 }
+
 .pulse-button2:hover {
     -webkit-animation: none;
 }
 
 
+
 #me {
-    position:fixed;
-    bottom:0px;
-    margin-left: 30px;
-    width: 100%;
-    max-width: 600px;
-    height: auto;
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+
+#me img{
+    display: block;
+    vertical-align: middle;
+    width: 90%;
+    -webkit-transition: opacity 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
 }
 
 #me img:hover {
@@ -302,9 +370,12 @@ img:hover {
 }
 
 #topofme {
-    font-size: 16px;
-    margin-left: 60px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 100;
+    font-size: 15px;
     margin-top: 20px;
+    margin-bottom:30px;
+    text-align:center;
 }
 
 

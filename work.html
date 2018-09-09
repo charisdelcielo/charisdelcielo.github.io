@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Free Bootstrap Themes by Html5xCss3 dot com - Free Responsive Html5 Templates">
+    <meta name="author" content="http://www.Html5xCss3.com">
+	
+    <title>Charis Ryu UX</title>
+	
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	
+		<!-- Custom CSS -->
+		<link href="css/style.css" rel="stylesheet">
+	
+		<head>
+  		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+		</head>
+
+		<header id="header">
+			<h1>Charis Ryu<br>
+            <p> It's fundamentally about how much we care.. about our users.</p>
+            </h1>    
+		</header>
+        
+		<nav id="navigation">
+        
+			<ul>
+				<li class = "active"><a href="work.html">Work</a></li>
+				<li><a href="index.html">About</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+            
+            
+		</nav>
+
+		<body>
+        
+        <!--Dynamic Section 0-->
+        <div id = "default-content" class = "dynamic content">
+        
+		
+		</main>
+		
+		<section class="gallery">
+		    <ul>
+		      <li class="item">
+			<div class="hvrbox" onclick="showOpico()">
+			    <img id = "opico" class = "hvrbox-layer_bottom" src="https://source.unsplash.com/hnEtVqVlVZU" >
+                <div class = "hvrbox-layer_top">
+                    <div class = "hvrbox-text"> Share and Discover Places with Emojis </div>
+                </div>
+            </div>
+            
+		      </li>
+		      <li class="item">
+                <div class="hvrbox" onclick="showSpotibuddy()">
+                    <img id="spotibuddy" class = "hvrbox-layer_bottom" src="https://source.unsplash.com/RPzWI0rolS8" >
+                    <div class = "hvrbox-layer_top">
+                        <div class = "hvrbox-text"> A buddy meter that tests how similar your musical tastes are by comparing your spotify playlists. </div>
+                    </div>
+                </div>
+                </li>
+                <li class="item">
+                <div class="hvrbox" onclick="showSplit()">
+                    <img id="split" class = "hvrbox-layer_bottom" src="https://source.unsplash.com/i1S4n4yQUKM" >
+                    <div class = "hvrbox-layer_top">
+                        <div class = "hvrbox-text"> Simplest way to save your delivery fee</div>
+                    </div>
+                </div>
+                </li>
+		      <li class="item">
+                <div class="hvrbox" onclick="showWifi()">
+                    <img id="wifi" class = "hvrbox-layer_bottom" src="https://source.unsplash.com/QgHvLSuIcLs">
+                    <div class = "hvrbox-layer_top">
+                        <div class = "hvrbox-text">Touch your wifi</div>
+                    </div>
+                </div>
+		      </li>
+            </ul>
+        </section>
+        </div>
+        
+        <!--Dynamic Section 1-->
+        <div id = "opicopage" class="dynamic-content">
+                    <h1>OPICO</h1>
+                    <p class="why-text">Search Marketing Group is a leader in creating unique Seo&nbsp;strategies that would help your website rank on page 1 of
+                    Google for your most competitive keywords in your niche. We pride ourself on creating custom solutions for&nbsp;businesses and
+                    making it work for them. </p>
+                    
+                    <p id="spotibuddy" onclick="showSpotibuddy()"> Spotibuddy </p>
+                    <p id="split" onclick="showSplit()"> $plit </p>
+                    <p id="wifi" onclick="showWifi()"> Touch your Wifi </p>
+                    
+                </div>
+        <!--Dynamic Section 2-->
+        <div id = "spotibuddypage" class="dynamic-content">
+                    <h3>Spotibuddy</h3>
+                    <p class="why-text">Search Marketing Group is a leader in creating unique Seo&nbsp;strategies that would help your website rank on page 1 of
+                    Google for your most competitive keywords in your niche. We pride ourself on creating custom solutions for&nbsp;businesses and
+                    making it work for them. </p>
+                </div>
+        
+        <!--Dynamic Section 3-->
+        <div id = "splitpage" class="dynamic-content">
+            <h3>$plit</h3>
+                    <p class="why-text">Search Marketing Group is a leader in creating unique Seo&nbsp;strategies that would help your website rank on page 1 of
+                    Google for your most competitive keywords in your niche. We pride ourself on creating custom solutions for&nbsp;businesses and
+                    making it work for them. </p>
+        </div>
+        <!--Dynamic Section 4-->
+        <div id = "wifipage" class="dynamic-content">
+                <h3>Touch Your Wifi</h3>
+                    <p class="why-text">Search Marketing Group is a leader in creating unique Seo&nbsp;strategies that would help your website rank on page 1 of
+                    Google for your most competitive keywords in your niche. We pride ourself on creating custom solutions for&nbsp;businesses and
+                    making it work for them. </p>
+                </div>
+            </div>
+
+		<script src="js/main.js"></script>
+        <script>
+            function showDefault() {
+                $('#opicopage').hide();
+                $('#default-content').show();
+                $('#spotibuddypage').hide();
+                $('#splitpage').hide();
+                $('#wifipage').hide();
+            }
+        
+            function showOpico() {
+                $('#opicopage').show();
+                $('#default-content').hide();
+                $('#spotibuddypage').hide();
+                $('#splitpage').hide();
+                $('#wifipage').hide();
+            }
+        
+            function showSpotibuddy() {
+                $('#opicopage').hide();
+                $('#default-content').hide();
+                $('#spotibuddypage').show();
+                $('#splitpage').hide();
+                $('#wifipage').hide();
+            }
+        
+            function showSplit() {
+                $('#opicopage').hide();
+                $('#default-content').hide();
+                $('#spotibuddypage').hide();
+                $('#splitpage').show();
+                $('#wifipage').hide();
+            }
+        
+            function showWifi() {
+                $('#opicopage').hide();
+                $('#default-content').hide();
+                $('#spotibuddypage').hide();
+                $('#splitpage').hide();
+                $('#wifipage').show();
+            }
+        </script>
+      
+       
+	</body>
+</html>
+			
