@@ -11,11 +11,7 @@ $(document).ready(function () {
 
 
 
-<<<<<<< HEAD
 
-
-=======
->>>>>>> 8aba9fd55cc1f84e3f0a2a4310fd6ab85cae5f8e
 (function($){
 	/* --------------------------------------------------
   Contact Pages
