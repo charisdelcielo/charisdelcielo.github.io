@@ -64,16 +64,20 @@ a {
   width: 100%;
   height: auto;
   background: #fff;
-  text-align: center;
   line-height: 40px;
   z-index: 1;
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
   border-bottom-style: solid;
   border-bottom-color: #C8C8C8;
-  border-bottom-width: 0.7px;
+  border-bottom-width: 0.1px;
 }
 
 #navigation ul {
-    margin-top: 8px;
+  margin: 0;
+  padding: 0;
+  margin-top: 3px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -81,6 +85,8 @@ a {
   align-items: center;
   list-style: none;
   z-index: 1;
+  margin-left: auto;
+  margin-right:auto;
 }
 
 #navigation ul > li > a {
@@ -127,7 +133,9 @@ a {
 
 .hvrbox img {
   vertical-align: middle;
-  width: 100%;
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
 }
 
 .hvrbox .hvrbox-layer_bottom {
@@ -207,6 +215,7 @@ a {
   grid-area: gallery;
   margin-top:30px;
   margin-right:40px;
+  margin-bottom:40px;
 }
 
 .gallery ul {
@@ -235,6 +244,11 @@ a {
   flex-basis: calc(50% - 1em);
 }
 
+.gallery ul .item img {
+    margin-right: auto;
+    margin-left: auto;
+}
+
 
 
 @media (max-width: 824px) {
@@ -253,6 +267,10 @@ a {
     float: none;
   }
   
+  #opico {
+      max-width: 80%;
+  }
+  
   .pulse-button {
       max-width: 40%;
   }
@@ -260,6 +278,40 @@ a {
   .pulse-button2 {
       max-width: 40%;
   }
+  
+  #header {
+      height: 140px;
+  }
+  
+  #header h1 {
+      font-size: 30px;
+  }
+  
+  #header p {
+      margin-top: 20px;
+      font-size: 10pt;
+  }
+  
+  #navigation {
+      line-height: 25px;
+      font-size: 12px;
+  }
+  
+  #navigation ul > li > a {
+      padding: 0 15px;
+  }
+  
+  #sidemenu {
+      font-family: 'GFS Didot', serif;
+      font-weight: 100;
+      font-size: 10px;
+      position: fixed;
+      bottom:0 !important;
+      top:75% !important;
+      width: 8em;
+      background-color: #F1F1F1 !important;
+  }
+
 }
 
 .dynamic-content {
@@ -377,6 +429,60 @@ a {
     margin-bottom:30px;
     text-align:center;
 }
+
+.dynamic-content {
+    vertical-align: middle;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 200;
+}
+
+.dynamic-content .subtitle {
+    margin-top: 20px;
+    margin-bottom: 2px;
+    font-weight: 400;
+    font-size: 19px;
+    color: #424242;
+}
+
+.dynamic-content .subsubtitle {
+    font-weight: 400;
+    font-size: 17px;
+    color: #666666;
+    margin-top: 1px;
+}
+
+.dynamic-content .body-text{
+    font-size: 17px;
+    color: #424242;
+}
+
+.dynamic-content img {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#sidemenu {
+    font-family: 'GFS Didot', serif;
+    font-weight: 100;
+    position: fixed;
+    left: 0;
+    top: 50%;
+    width: 8em;
+    margin-top: 80px;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+#sidemenu p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+
 
 
 
