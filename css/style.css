@@ -135,7 +135,6 @@ a {
   vertical-align: middle;
   object-fit: cover;
   max-width: 100%;
-  height: auto;
 }
 
 .hvrbox .hvrbox-layer_bottom {
@@ -201,11 +200,13 @@ a {
 
 .item {
   max-width: 50%;
-  float: left;
+  float: none;
   margin-bottom:10px;
   display: block;
   
 }
+
+
 
 .item:nth-of-type(2n+1) {
   clear: left;
@@ -223,6 +224,8 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   grid-gap: 1em;
 }
+
+
 
 
 .gallery ul {
@@ -267,9 +270,7 @@ a {
     float: none;
   }
   
-  #opico {
-      max-width: 80%;
-  }
+
   
   .pulse-button {
       max-width: 40%;
