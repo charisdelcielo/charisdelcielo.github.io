@@ -4,7 +4,7 @@ Free Bootstrap Themes : http://www.Html5xCss3.com
 
 /* ==== Google font ==== */
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=GFS+Didot"|Didot); 
+@import url("https://fonts.googleapis.com/css?family=GFS+Didot"|Didot);
 @import url('http://fonts.googleapis.com/css?family=PT+Sans:700'|Pacifico|Changa+One);
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900');
@@ -203,7 +203,7 @@ a {
   float: none;
   margin-bottom:10px;
   display: block;
-  
+
 }
 
 
@@ -269,39 +269,39 @@ a {
     max-width: 100%;
     float: none;
   }
-  
 
-  
+
+
   .pulse-button {
       max-width: 40%;
   }
-  
+
   .pulse-button2 {
       max-width: 40%;
   }
-  
+
   #header {
       height: 140px;
   }
-  
+
   #header h1 {
       font-size: 30px;
   }
-  
+
   #header p {
       margin-top: 20px;
       font-size: 10pt;
   }
-  
+
   #navigation {
       line-height: 25px;
       font-size: 12px;
   }
-  
+
   #navigation ul > li > a {
       padding: 0 15px;
   }
-  
+
   #sidemenu {
       font-family: 'GFS Didot', serif;
       font-weight: 100;
@@ -315,9 +315,7 @@ a {
 
 }
 
-.dynamic-content {
-    display:none;
-}
+
 
 .container {
     width: 300px;
@@ -481,10 +479,3 @@ a {
     margin-top: 10px;
     text-align: center;
 }
-
-
-
-
-
-
-

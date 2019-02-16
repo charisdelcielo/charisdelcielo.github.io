@@ -1,67 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Free Bootstrap Themes by Html5xCss3 dot com - Free Responsive Html5 Templates">
-            <meta name="author" content="http://www.Html5xCss3.com">
-                
-                <title>Charis Ryu UX</title>
-                
-                <!-- Bootstrap Core CSS -->
-                <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-                 
-                    
-                    <!-- Custom CSS -->
-                    <link href="css/style.css" rel="stylesheet">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Free Bootstrap Themes by Html5xCss3 dot com - Free Responsive Html5 Templates">
+    <meta name="author" content="http://www.Html5xCss3.com">
+
+    <title>Charis Ryu UX</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+		<!-- Custom CSS -->
+		<link href="css/style.css" rel="stylesheet">
+
+		<head>
+  		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+		</head>
+
+		<header id="header">
+			<h1>Charis Ryu<br>
+            <p> I will first be a user, then a designer.</p>
+            </h1>
+		</header>
+
+		<nav id="navigation">
+
+			<ul>
+				<li class = "active"><a href="index.html">Work</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+
+
+		</nav>
+
+		<body>
+
+        <!--Dynamic Section 0-->
+        <div id = "default-content" class = "dynamic content">
+
+
+		</main>
+
+		<section class="gallery">
+		    <ul>
+		      <li class="item">
+			<div class="hvrbox" id = "opico" onclick="document.location=this.id+'.html';return false;">
+
+			    <img id = "opicos" class = "hvrbox-layer_bottom" src="images/opico_main.gif" >
+                <div class = "hvrbox-layer_top">
+                    <div class = "hvrbox-text"> Opico App <br> Share and Discover Places with Emojis </div>
+                </div>
+            </div>
+
+		      </li>
+              <li class="item">
+                <div class="hvrbox" id = "split" onclick="document.location=this.id+'.html';return false;">
+                  <img id="splits" class = "hvrbox-layer_bottom" src="images/split_main.png" >
+                  <div class = "hvrbox-layer_top">
+                  <div class = "hvrbox-text"> $plit App <br> Split you delivery fee with your anonymous neighbors </div>
+                  </div>
+                </div>
+              </li>
+		      <li class="item">
+                <div class="hvrbox" id = "spotibuddi" onclick="document.location=this.id+'.html';return false;">
+                    <img id="spotibuddys" class = "hvrbox-layer_bottom" src="images/spotibuddi_main.jpg" >
+                    <div class = "hvrbox-layer_top">
+                        <div class = "hvrbox-text"> Spotibuddi <br> A buddy meter for your Spotify playlists, visualized with D3.js </div>
+                    </div>
+                </div>
+                </li>
+                <li class="item">
+                    <div class="hvrbox" id = "internships" onclick="document.location=this.id+'.html';return false;">
+                        <img id="internships" class = "hvrbox-layer_bottom" src="https://source.unsplash.com/QgHvLSuIcLs">
+                        <div class = "hvrbox-layer_top">
+                            <div class = "hvrbox-text">Internships<br> UX Design / Chatbot Design</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        </div>
+
+
+
+
+        <!--Dynamic Section 3-->
+        <!--Dynamic Section 4-->
+        <div id = "internpage" class="dynamic-content">
+            <p class = "body-text"> I worked as a VR UX Designer at Monsanto Company over 2018 Summer.
+              <p class = "subtitle"> Skills </p>
+            </div>
+        <!--Dynamic Section 5-->
+        <div id = "wifipage" class="dynamic-content">
+                <h3>Touch Your Wifi</h3>
+                    <p class="why-text">Search Marketing Group is a leader in creating unique Seo&nbsp;strategies that would help your website rank on page 1 of
+                    Google for your most competitive keywords in your niche. We pride ourself on creating custom solutions for&nbsp;businesses and
+                    making it work for them. </p>
+                </div>
+            </div>
             
-                            <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-                        </head>
-                                
-                        <header id="header">
-                                    <h1>Charis Ryu<br>
-                                    <p>I will first be a user, then a designer.</p>
-                                    </h1>
-                        </header>
-                                
-                        <nav id="navigation">
-                                    <ul>
-                                        <li><a href="work.html">Work</a></li>
-                                        <li class = "active"><a href="index.html">About</a></li>
-                                        <li><a href="blog.html">Blog</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                    </ul>
-                                
-                        </nav>
-                                
-                         <body>
-                            <div id = "me" class="picture">
-                                <p id="topofme"> Nice to meet you! I'm UX Designer Charis. <br> Hover over the picture if you want to find out my deep n dark secrets ;)</p>
-                                    
-                                        <img id="my-img" src="images/Group1.png" onmouseover="hover(this);" onmouseout="unhover(this);" />
-  
-                            </div>
-                            
-                            <span class='pulse-button'>resume</span>
-                            <span class='pulse-button2'>music</span>
-                            
-                                
-                            <script src="js/main.js"></script>
-                            <script>
-                                function hover(element) {
-                                    element.setAttribute('src', 'images/Group2.png');
-                                }
-                                    
-                                function unhover(element) {
-                                    element.setAttribute('src', 'images/Group1.png');
-                                }
-                            
-                            </script>
-                                    
-                        </body>
-                                
-                            
-        </html>
-                                
+		<script src="js/main.js"></script>
+        <script>
+            function showDefault() {
+                $('#opicopage').hide();
+                $('#default-content').show();
+                $('#spotibuddypage').hide();
+                $('#splitpage').hide();
+                $('#internpage').hide();
+                $('#wifipage').hide();
+            }
+
+            function showOpico() {
+                $('#opicopage').show();
+                $('#default-content').hide();
+                $('#spotibuddypage').hide();
+                $('#splitpage').hide();
+                $('#internpage').hide();
+                $('#wifipage').hide();
+            }
+
+            function showSpotibuddy() {
+                $('#opicopage').hide();
+                $('#default-content').hide();
+                $('#spotibuddypage').show();
+                $('#splitpage').hide();
+                $('#internpage').hide();
+                $('#wifipage').hide();
+            }
+
+            function showSplit() {
+                $('#opicopage').hide();
+                $('#default-content').hide();
+                $('#spotibuddypage').hide();
+                $('#splitpage').show();
+                $('#internpage').hide();
+                $('#wifipage').hide();
+            }
+
+            function showIntern() {
+                $('#opicopage').hide();
+                $('#default-content').hide();
+                $('#spotibuddypage').hide();
+                $('#splitpage').hide();
+                $('#internpage').show();
+                $('#wifipage').hide();
+            }
+
+            function showWifi() {
+                $('#opicopage').hide();
+                $('#default-content').hide();
+                $('#spotibuddypage').hide();
+                $('#splitpage').hide();
+                $('#internpage').hide();
+                $('#wifipage').show();
+            }
+        </script>
+
+
+	</body>
+</html>
