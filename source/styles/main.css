@@ -206,27 +206,48 @@ h2 {
   width: 100%;
   display: flex;
   margin-bottom: 150px;
+  overflow:auto;
 }
 
-
-.preview-text > .logo {
-  width: 80px;
-  height: auto;
-  cursor: pointer;
-}
 
 .preview-text {
-  margin-top: 4%;
+  margin-top: 5%;
   flex: 40%;
 }
 
 .preview-image {
+  border: 0;
   margin-top: 5%;
-  flex: 60%;
+  flex: 50%;
   width: 50%;
   height: 50%;
   padding-right: 5%;
   cursor: pointer;
+}
+
+#opico-main-image {
+  border: 0;
+  margin-top: 5%;
+  margin-right: 5%;
+  flex: 35%;
+  width: 35%;
+  height: 35%;
+  padding-left: 10%;
+  cursor: pointer;
+}
+
+#main-page video {
+  margin-top: 5%;
+  flex: 50%;
+  width: 50%;
+  height: 50%;
+  padding-right: 5%;
+  cursor: pointer;
+
+}
+
+.preview-image:hover, .preview-title:hover {
+  opacity: 0.6;
 }
 
 .preview-text > p {
@@ -235,6 +256,10 @@ h2 {
     font-weight: 300;
 }
 
+#dribbble-gif {
+  width:150px;
+  height: auto;
+}
 
 
 /* about */
@@ -246,7 +271,7 @@ h2 {
 .profile-content {
   display: block;
   margin-top: 5%;
-  margin-left: 10%;
+  margin-left: 5%;
   height: auto;
 }
 
@@ -282,4 +307,107 @@ footer {
   font-size: 20px;
   text-align: right;
   padding-right: 10%;
+}
+
+
+/* opico.html & general css for all project pages */
+
+#opico-page {
+  font-family : "Open Sans";
+}
+
+.body-text {
+  font-family : "Open Sans";
+  font-size: 16px;
+  font-weight: 300;
+  display: block;
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+
+.subtitle {
+  font-family : "Open Sans";
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  margin-top: 25px;
+}
+
+
+#balsamiq {
+  width: 100%;
+  height: auto;
+  margin-top: 5%;
+}
+
+#postflow_redesign {
+  width: 100%;
+  height: auto;
+  margin-top: 5%;
+}
+
+.subproject {
+  width: 60%;
+  height: auto;
+  margin-left: 20%;
+  margin-top: 4%;
+  margin-bottom: 6%;
+}
+
+.title {
+  margin-top: 6%;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+.subheadtitle {
+  font-size: 20px;
+  margin-top: 0;
+  font-family: 'Permanent Marker', cursive;
+  margin-bottom: 30px;
+}
+
+.head-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  width: 50%;
+
+}
+
+.subtitle1 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#opico-page video {
+  width: 80%;
+  height: 80%;
+  margin-left: 10%;
+}
+
+.image-gallery {
+  margin-top: 10%;
+}
+
+.gallery-image {
+  float: left;
+  width: 46%;
+  margin: 2%;
+}
+
+.row:after, .two-columns {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#painpoints, #designsolutions {
+  float: left;
+  width: 40%;
+  margin-left: 0%;
+  font-size: 14px;
+  margin-top: 4%;
 }

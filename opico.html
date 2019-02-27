@@ -21,7 +21,7 @@
     <nav id = "navigation">
       <ul id = "horizontal-list">
           <li class="nav__list-item" id = "list1Link">User Experience</li>
-    			<li class="nav__list-item" id = "project1Link" onclick="document.location='opico.html';return false;">opico</li>
+    			<li class="nav__list-item" id = "project1Link" onclick="document.location='OPICO.html';return false;">OPICO</li>
     			<li class="nav__list-item" id = "project2Link">$plit</li>
           <hr></hr>
           <li class="nav__list-item" id = "list2Link">Data Visualization</li>
@@ -37,6 +37,200 @@
     		</ul>
     	</nav>
 
-    <script src="source/scripts/main.js" type="text/javascript"></script>
+      <body id = "opico-page">
+        <section class = "subproject">
+          <h class = "title"> OPICO </h>
+          <div class = "subheadtitle"> opinionated emojis - a social review app</div>
+          <img class = "head-image" src = "/source/images/opico_illustration.svg" alt = "gif demo goes here">
+          <div class = "brief-info">
+            <h2> Overview </h2>
+            <div class = "body-text">
+              OPICO is an app for exploring and reacting to places with
+              only maximum 5 emojis.
+            </div>
+            <img class = "head-image" src = "/source/images/opico-main.png">
+
+               <!--I joined the team in January 2018, when the initial development
+              process was completed and the app was welcoming new users. Thus, there were
+              a lot of new design decisions and revisions to be made, which was mainly
+              my goal.-->
+            <div class = "body-text">
+              <br>
+              For over a year working on the project, I worked closely with the developers
+              and researchers of the team to design the UI/UX of the app. I redesigned various user task flows
+              including posting reaction flow, designed new features and interface, performed
+              user studies (interviews, survey, emoji usage data analysis) and also actively
+              advertised the app by creating media contents such as posters, videos, etc.
+              <br><br>As of today, OPICO has over 1000 registered users, 5000 emoji reactions,
+              and around 30 super users (users who posted on the app regularly for over a month or year).
+            </div>
+            <h2> My role </h2>
+            <div class = "body-text"> UI/UX Design, Prototyping, User Study, Front-End Development </div>
+            <h2> Duration </h2>
+            <div class = "body-text"> 1yr 2mo (~Current) </div>
+          </div>
+        </section>
+
+        <hr id = "section-line"></hr>
+
+        <section class = "subproject" id = "emoji-map">
+
+          <div class = "subtitle1">  Exploring Places with Emoji Map </div>
+
+          <video autoplay loop muted>
+            <source src = "/source/images/opico_map_animation.mp4" type="video/mp4">
+          </video>
+          <div class = "subtitle"> Overview </div>
+          <div class = "body-text"> Emoji Map allows the users to explore their locations (whether it's a small town,
+            college campus, big city, or even a country) simply through "emojis on the map."
+            New nearby reactions or filtered reactions based on emoji filters that are shown in a scrolling card view adds more fun and visual aesthetics to the map.
+            The lack of texts and restrictiveness of the Emoji Map adds more fun of guessing and finding new locations and stories.
+
+          </div>
+
+          <div class = "subtitle"> Design Process </div>
+          <div class = "body-text">
+
+            <img src = "/source/images/mapview_balsamiq.png" id = balsamiq>
+            <br>
+            <br>
+
+              I designed a map-based interface that is efficient and visually enjoyable for the users to
+            discover interesting places with personalized emoji filters. The filters are auto-updated based on the
+            user location, and selected by the frequency of the emoji patterns that are same with/similar to the filter.
+            <br> Instead of looking for keywords such as "Brunch Place" or "Brunch in Chicago",
+            the users can select from the map an emoji filter, <☀️ (sun) ☕ (coffee)🍴 (fork and knife)>, to view all the emoji
+            reactions to brunch places in Chicago.
+            <br>
+            Let me explain in detail the design through below wireframes and paragraphs.
+           </div>
+
+          <div class = "preview">
+            <img class = "preview-image" src = "/source/images/opico_view_result.png">
+            <div class = "preview-text" style = "font-weight:300;">
+              The user has selected "Brunch in Chicago" filter represented by a sun, coffee, and fork & knife emojis.
+              The below reactions in a scrolling card view layout are the filtered results.
+              They contain the same <☀️ (sun) ☕ (coffee)🍴 (fork and knife)> pattern
+              or a similar pattern we can assume that are related to "Brunch," such as <☀️ (sun) 🥞 (pancake) ☕ (coffee)>.
+              <br> You can see that this result does not only show reactions to one brunch place, but instead displays
+              any reactions to any locations that are related to "Brunch in Chicago."
+            </div>
+          </div>
+          <div class = "preview">
+              <img class = "preview-image" src = "/source/images/opico_view_all.png">
+              <div class = "preview-text" style = "font-weight:300;">
+                This screen is when the user clicked on the "coffee" emoji on top-right from the previous screen.
+                As a result, the map focused to the coffee emoji, and the card view this time shows the information of
+                "Breakfast Town," which is represented by that coffee emoji.
+                <br> Also, it shows multiple "Brunch"-related
+                reactions only to "Breakfast Town," and no other restaurants.
+              </div>
+          </div>
+
+          <div class = "subtitle"> Inspirations </div>
+          <div class = "body-text"> Design flows of apps like Google Map, Google Trips,
+            Swarm, and Airbnb inspired the card-view layout, filter-based search, and
+            several other features of the Emoji Map.
+          <div class = "subtitle"> Takeaways </div>
+          <div class = "body-text"> Updating an interface with multiple new features that still blends in well
+            with the rest of the UX requires deliberations on both uniqueness and familiarity.
+        </section>
+
+        <hr id = "section-line"></hr>
+
+        <section class = "subproject">
+            <div class = "subtitle1"> Redesigning Post Reaction Flow </div>
+              <img id = "opicos" class = "head-image" src="source/images/redesign_preview.png">
+              <div class = "subtitle"> Overview </div>
+              <div class = "body-text">
+                Post Reaction task is the main feature of OPICO, as it allows the users to post their emoji reactions so that others' can see and like.
+                The original design and flow of this task received some feedbacks that it did not reflect the user flow or logic very well.
+                I re-designed the posting flow, which had not been updated since it was initially designed.
+              </div>
+            <div class = "subtitle"> Problem Identified </div>
+            <div class = "body-text"> Post Reaction task has 2 main subtasks:
+               Set Location and Add Reaction, which should be completed in a sequential order.
+               However, multiple users gave us a feedback that the app's original interface treated these subtasks as one single task,
+               having them crammed in one interface, thus overwhelming the interface.
+               Also, it didn't suggest users to complete tasks step-by-step but instead allowed them to start reacting with emojis without setting their location first,
+               which logically does not make sense.
+             </div>
+             <div class = "subtitle"> Design Process </div>
+             <div class="body-text">
+               In the above interface, if you want to add a location, you have to tap the "+" button to move to "Set Location" page, search for and select a location, and come back to the main page to add your reaction, which I found unnecessary.<br>
+                 I divided the two subtasks into separate pages so that when the users start Post Reaction task, they have to "Set a Location" first, before moving onto "Adding an Emoji" task.
+            </div>
+
+            <div class = "two-columns">
+                <div id = "painpoints">
+                  <div style="font-weight:600;">PAINPOINTS</div>
+                  <br> -Repeated & confusing flow
+                  <br> (Add Reaction -> Select Location -> Add Reaction)
+                  <br> -Unnecessarily big “Add Reaction” button
+                  <br> -No “Go Back” button </div>
+                <div id = "designsolutions">
+                  <div style="font-weight:600;"> REDESIGN SOLUTION </div>
+                  <br> -2-Step logical flow (location first, then react)
+                  <br> -Suggest nearby location for convenience
+                  <br> -“Back” and “Post” buttons integrated in header 	section
+              </div>
+            </div>
+            <img id = "postflow_redesign" src = "/source/images/opico_redesign.png">
+            <div class = "subtitle"> User Study </div>
+            <div class = "body-text"> As we received similar user feedbacks for the original design,
+            I reached out to the users and walked them through the new design solution.
+            As a result, 12/14 users found the new design easier to understand and use as it had a clear
+            but connected division of two subtasks.
+            </div>
+
+            <div class = "subtitle"> Takeaways </div>
+            <div class="body-text"> Simplifying an overwhelming design and understanding the logical flow
+              resulted in a better use case and interface. <br> <br>
+
+          </section>
+
+          <hr id = "section-line"></hr>
+
+          <section class = "subproject">
+            <div class = "subtitle1"> Emoji Usage Analysis (CHI Conference)</div>
+            <img class = "head-image" style = "margin-top: 10%; margin-bottom: 10%; width: 100%;" src = "source/images/banner.png">
+          </section>
+
+          <hr id = "section-line"></hr>
+
+          <section class = "subproject">
+            <div class = "subtitle1"> More Design Works </div>
+
+            <div class = "image-gallery">
+              <div class = "row">
+                <img class = "gallery-image" src="source/images/opico_main.gif">
+                <img class = "gallery-image" src="source/images/business_card.png">
+              </div>
+              <div class = "row">
+                <img class = "gallery-image" src="source/images/opico_app_logo.png">
+                <img class = "gallery-image" src="source/images/poster.jpeg">
+              </div>
+              <div class = "row">
+                <img class = "gallery-image" src="source/images/map_wall.jpeg">
+
+
+              </div>
+          </div>
+
+            <div class = "body-text"> </div>
+
+          </section>
+
+
+          <script src="source/scripts/main.js" type="text/javascript"></script>
+
+          <script type="text/javascript">
+            var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq ||
+            {widgetcode:"e3865435d312062aa8340c76090c1429ded4bf44f0f3e89c4ff994ab6cd6ff3b", values:{},ready:function(){}};
+            var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
+            s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
+            </script>
+
+      </body>
 
 </html>

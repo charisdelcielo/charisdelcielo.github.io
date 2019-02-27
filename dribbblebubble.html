@@ -37,6 +37,70 @@
     		</ul>
     	</nav>
 
-    <script src="source/scripts/main.js" type="text/javascript"></script>
+    <body>
+      <h class = "title"> Dribbble Bubble! </h>
+      <img src = "/source/dribbbleimgs/main.gif" alt = "gif demo goes here">
+      <div class = "brief-info">
+        <h2> My role: Data Visualization (D3.js), Prototyping (Sketch), Web Development (HTML/CSS/JS)
+          <br>Duration: 1mo
+          <br> Overview: Dribbble Bubble! is a data visualization project that discovers
+          interesting behavioral patterns of how the viewers' use different reactions (likes, saves, comments)
+          to 500 posts from 3 popular categories (Illustration, UI/UX, Logo).
+          <br> Motivation: Dribbble is an online community for designers to showcase
+          their work and react to others’. I wanted to observe any interesting patterns in
+          how the viewers react to various posts in different categories.
+          <br> Question to answer: Are there different patterns in
+          Dribbble users’ uses of <b>likes, saves, and comments</b> on posts in different
+          categories of design work (illustration, UI/UX, logo)?
+          <br> Assumptions: 1. UI/UX posts will receive more saves in general than Illustration posts
+          because they have more contents and could be used as refereces by other designers.
+          2. UI/UX and Logo posts will receive more comments than Illustration posts as other designers
+          can criticize or complement the techniques or the content of the post.
+          3. Illustration posts will receive more likes than UI/UX or Logo posts as they are
+          more enjoyable and simple.
+          <br> Design Process
+          I designed the prototypes for the visualization with Sketch.
+          Our team considered multiple approaches for the visualizations that allows us
+          to compare three attributes at once. One idea was to use a triangle graph that has
+          the three categories as the edges. However, the scaling of three numbers
+          can be challenging as the number of likes are much larger than the other two,
+          and thus the visualization could be misleading.
+           <br> Simple is the best <br>
+           We decided to have a graph with 2 axes with each colored dot representing a post when
+           each of 3 colors corresponds to each category. Moreover, as a fan of visualizations that suggests user involvement, I wanted to add user interactions
+          to the visualization. So, I created a legend with five features that the viewers can
+          play around with.
 
+          <br> <img alt = "prototypes"> <br>
+
+          <br> Implementation
+
+          <br> Result & Observations
+          Despite the obstacles and concerns we had regarding representing the data properly, we still
+          discovered several interesting patterns and observations with our manually collected data.
+          1. UI/UX posts generally received more comments than
+          The dots for UI/UX posts were
+
+          <br> Takeaways
+          <br>Considering all of technical, aesthetic, and representative aspects of a visualization
+          is quite challenging. If the type of visualization is expected to desirably represent the data,
+          we face other challenges such as how technically feasible the idea is or visually aesthetic, user-friendly, and
+          story-telling the outcome is.
+          <br>When working on a data visualization project, we may face realistic or legal issues about
+          collecting and using the data such as the copyright or the provider's policies.
+          Thus, it is crucial to research about the feasilbility of data collection process in advance.
+
+      </div>
+
+      <script src="source/scripts/main.js" type="text/javascript"></script>
+
+
+      <script type="text/javascript">
+        var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq ||
+        {widgetcode:"e3865435d312062aa8340c76090c1429ded4bf44f0f3e89c4ff994ab6cd6ff3b", values:{},ready:function(){}};
+        var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
+        s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
+        </script>
+
+    </body>
 </html>

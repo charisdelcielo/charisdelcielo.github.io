@@ -37,7 +37,7 @@
     		</ul>
     	</nav>
 
-		<body>
+		<body id = "main-page">
 
       <section id = "intro">
         <span> Hello, I'm Charis.</span>
@@ -48,101 +48,80 @@
       </section>
       <hr id = "section-line"></hr>
 
+      <section id = "about">
+        <h> About </h>
+        <div class = "profile-content">
+
+          <img id = "profile-photo" src = "source/images/profile.png" style="float: left; margin: 50px 0px 10px 10px;">
+          <span id = "profile-text">
+            <br> <br> Hello, my name is Charis. Thanks for visiting my website! 🙌
+            <br><br>I'm a passionate designer and developer who loves detail-oriented creative works.
+            Also, I'm currently a rising senior in Computer Science at the University of Illinois at Urbana-Champaign.
+            <br><br> To talk about my technical skillsets, I am fluent in prototyping/design tools such as Sketch, Adobe XD, Adobe After Effects,
+            and Balsamiq with some Web Development skills (HTML5, CSS3, Javascript, React JS, etc). I also have various
+          design & development experience with other general-purpose languages such as Java, Python, and C#.
+
+            <br></span>
+        </div>
+      </section>
+
+      <hr id = "section-line"></hr>
+
 
   		<section id = "work_preview">
         <h> works </h>
-        <div class="preview" id = "p1">
-          <img id = "opicomap" class = "preview-image" src="source/images/opico_main.gif" onclick="document.location=this.id+'.html';return false;">
-          <div class = "preview-text">
-            <img id = "opico-logo" class = "logo" src = "source/images/opico-logo.png">
-            <h1 onclick="document.location=this.id+'.html';return false;"> Opico </h1>
-            <h2> Hats worn </h2>
-            <p> UI/UX, Front-End Development </p>
-            <h2> Duration </h2>
-            <p> 1yr 2mo (~Current) </p>
-            <h2> Description </h2>
-            <p> Opico is a social space for people to discover and react to places only with emojis. </p>
-            <img id = "opico-apple" src = "source/images/apple.svg" >
-            <img id = "opico-android" src = "source/images/google.png">
-          </div>
 
         </div>
   			<div class="preview" id = "p1">
-            <img id = "opicos" class = "preview-image" src="source/images/opico_main.gif" onclick="document.location=this.id+'.html';return false;">
-          <div class = "preview-text">
+          <video autoplay loop muted>
+            <source src = "/source/images/opico_map_animation.mp4" type="video/mp4" onclick="document.location='opico.html';return false;">
+          </video>
+            <div class = "preview-text">
             <img id = "opico-logo" class = "logo" src = "source/images/opico-logo.png">
-            <h1 onclick="document.location=this.id+'.html';return false;"> Discover with Emoji Map </h1>
+            <h1 class = "preview-title" onclick="document.location='opico.html';return false;"> Exploring Places with Emoji Map </h1>
             <h2> Hats worn </h2>
             <p> User Study, UI/UX Design </p>
             <h2> Description </h2>
-            <p> Map view with emoji reaction bubbles allow the users to discover to places. </p>
+            <p> Users can explore locations through nearby emoji reactions and personalized emoji filters in a map interface. </p>
+          </div>
+
+        </div>
+
+        <div class="preview" id = "p3">
+          <img id = "opicos" class = "preview-image" src="source/images/redesign_preview.png" onclick="document.location='opico.html';return false;">
+          <div class = "preview-text">
+            <img id = "opico-logo" class = "logo" src = "source/images/opico-logo.png">
+            <h1 class = "preview-title" onclick="document.location='opico.html';return false;"> Post Reaction Flow & Interface Re-design </h1>
+            <h2> Hats worn </h2>
+            <p> User Study, UI/UX Design </p>
+            <h2> Description </h2>
+            <p> I re-designed the posting flow of the emoji reactions. The users can focus on a single task in one interface
+              sequentially followed by the next task, instead of facing one overwhelming interface with two tasks.
+             </p>
           </div>
 
         </div>
 
         <div class="preview" id = "p2">
-          <img id = "opicos" class = "preview-image" src="source/images/opico_main.gif" onclick="document.location=this.id+'.html';return false;">
+          <img id = "opicos" class = "preview-image" src="source/images/opico.gif" onclick="document.location='opico.html';return false;">
           <div class = "preview-text">
             <img id = "opico-logo" class = "logo" src = "source/images/opico-logo.png">
-            <h1 onclick="document.location=this.id+'.html';return false;"> Emoji Usage Analysis </h1>
+            <h1 class = "preview-title" onclick="document.location='opico.html';return false;"> Emoji Usage Analysis & Personalized Visualization </h1>
             <h2> Co-author submissions </h2>
             <p> CHI 2019 Conference, Emoji2019
             <h2> Hats worn </h2>
             <p> UX Survey, UI Design, Data Analysis/Visualization </p>
-            <h2> Description </h2>
-            <p> Map view with emoji reaction bubbles allow the users to discover to places. </p>
-          </div>
-
-        </div>
-
-        <div class="preview" id = "p3">
-          <img id = "opicos" class = "preview-image" src="source/images/opico_main.gif" onclick="document.location=this.id+'.html';return false;">
-          <div class = "preview-text">
-            <img id = "opico-logo" class = "logo" src = "source/images/opico-logo.png">
-            <h1 onclick="document.location=this.id+'.html';return false;"> User Flow & Interface Redesign </h1>
-            <h2> Hats worn </h2>
-            <p> User Study, UI/UX Design </p>
-            <h2> Description </h2>
-            <p> Map view with emoji reaction bubbles allow the users to discover to places. </p>
-          </div>
-
-        </div>
-
-        <div class="preview" id = "p3">
-          <img id = "opicos" class = "preview-image" src="source/images/opico_main.gif" onclick="document.location=this.id+'.html';return false;">
-          <div class = "preview-text">
-            <img id = "opico-logo" class = "logo" src = "source/images/opico-logo.png">
-            <h1 onclick="document.location=this.id+'.html';return false;"> Personalized Visualization </h1>
-            <h2> Hats worn </h2>
-            <p> UI/UX Design, Front-End Development </p>
-            <h2> Description </h2>
-            <p> Map view with emoji reaction bubbles allow the users to discover to places. </p>
-          </div>
-
-        </div>
-
-        <div class="preview" id = "p4">
-          <img id = "opicos" class = "preview-image" src="source/images/opico_main.gif" onclick="document.location=this.id+'.html';return false;">
-          <div class = "preview-text">
-            <img id = "opico-logo" class = "logo" src = "source/images/opico_main.gif">
-            <h1 onclick="document.location=this.id+'.html';return false;"> Emoji Keyboard </h1>
-            <h2> Hats worn </h2>
-            <p> UI/UX Design </p>
-            <h2> Description </h2>
-            <p> Map view with emoji reaction bubbles allow the users to discover to places. </p>
           </div>
 
         </div>
 
         <div class="preview" id = "p5">
-          <img id = "opicos" class = "preview-image" src="source/images/opico_main.gif" onclick="document.location=this.id+'.html';return false;">
+          <img id = "opicos" class = "preview-image" src="source/images/business_card.png" onclick="document.location='opico.html';return false;">
           <div class = "preview-text">
-            <img id = "opico-logo" class = "logo" src = "source/images/opico_main.gif">
-            <h1 onclick="document.location=this.id+'.html';return false;"> Design Works </h1>
+            <img id = "opico-logo" class = "logo" src = "source/images/opico-logo.png">
+            <h1 class = "preview-title" onclick="document.location='opico.html';return false;"> Design Works </h1>
             <h2> Hats worn </h2>
             <p> Motion graphics, Graphic design, Poster design </p>
-            <h2> Description </h2>
-            <p> Map view with emoji reaction bubbles allow the users to discover to places. </p>
           </div>
 
         </div>
@@ -150,14 +129,14 @@
         <hr id = "within-section-line"></hr>
 
         <div class="preview" id = "p6">
-          <img id = "opicos" class = "preview-image" src="source/images/opico_main.gif" onclick="document.location=this.id+'.html';return false;">
+          <img id = "opicos" class = "preview-image" src="source/images/split_main.png" onclick="document.location='split.html';return false;">
           <div class = "preview-text">
-            <img id = "opico-logo" class = "logo" src = "source/images/opico_main.gif">
-            <h1 onclick="document.location=this.id+'.html';return false;"> $plit </h1>
+            <img id = "split-logo" class = "logo" src = "source/images/split-logo.png">
+            <h1 class = "preview-title" onclick="document.location='split.html';return false;"> $plit </h1>
             <h2> Hats worn </h2>
-            <p> User Study, UI/UX Design </p>
+            <p> User Study, UI/UX Design, UI Development (Android Studio) </p>
             <h2> Description </h2>
-            <p> Map view with emoji reaction bubbles allow the users to discover to places. </p>
+            <p> $plit is a delivery-fee sharing + ordering app mainly targeting broke college kids. </p>
           </div>
 
         </div>
@@ -165,15 +144,14 @@
         <hr id = "within-section-line"></hr>
 
         <div class="preview" id = "p6">
-          <img id = "opicos" class = "preview-image" src="source/images/opico_main.gif" onclick="document.location=this.id+'.html';return false;">
+          <img id = "opicos" class = "preview-image" src="source/images/spotibuddi_preview.png" onclick="document.location='spotibuddi.html';return false;">
           <div class = "preview-text">
-            <img id = "opico-logo" class = "logo" src = "source/images/opico_main.gif">
-            <h1 onclick="document.location=this.id+'.html';return false;"> Spotibuddi </h1>
+            <h1 class = "preview-title" onclick="document.location='spotibuddi.html';return false;"> Spotibuddi </h1>
             <h2> Hats worn </h2>
             <p> Web Design, Front-End Development</p>
             <h2> Description </h2>
             <p> Spotibuddi (Spotify Buddy Meter) is a website that compares two user's Spotify information such as playlists and followers in card-based UI.
-              <br>I designed the website with Sketch and used Spotify Web API, Javascript, HTML/CSS, Masonry Library for implementation.
+              <!--br>I designed the website with Sketch and used Spotify Web API, Javascript, HTML/CSS, Masonry Library for implementation. -->
             </p>
           </div>
 
@@ -182,14 +160,18 @@
         <hr id = "within-section-line"></hr>
 
         <div class="preview" id = "p6">
-          <img id = "opicos" class = "preview-image" src="source/images/opico_main.gif" onclick="document.location=this.id+'.html';return false;">
+
+          <video autoplay loop muted>
+            <source src = "source/images/dribbble_animation.mp4" type="video/mp4" onclick="document.location='dribbblebubble.html';return false;">
+          </video>
           <div class = "preview-text">
-            <img id = "opico-logo" class = "logo" src = "source/images/opico_main.gif">
-            <h1 onclick="document.location=this.id+'.html';return false;"> Dribbble Bubble! </h1>
+            <h1 class = "preview-title" onclick="document.location='dribbblebubble.html';return false;"> Dribbble Bubble! </h1>
             <h2> Hats worn </h2>
-            <p> Data Visualization, Web Design, Front-End Development </p>
+            <p> Data Visualization (D3.js), Web Design, Front-End Development </p>
             <h2> Description </h2>
-            <p> Map view with emoji reaction bubbles allow the users to discover to places. </p>
+            <p> Dribbble Bubbble! is a data visualization project with the goal of
+               discovering and comparing interesting behavioral patterns of the viewers' different usages of
+               reactions (likes, saves, comments) to the posts from 3 popular categories (Illustration, UI/UX, Logo). </p>
           </div>
 
         </div>
@@ -197,16 +179,18 @@
         <hr id = "within-section-line"></hr>
 
         <div class="preview" id = "p6">
-          <img id = "opicos" class = "preview-image" src="source/images/opico_main.gif" onclick="document.location=this.id+'.html';return false;">
+          <img id = "opicos" class = "preview-image" src="source/images/vr1.png" onclick="document.location='intern.html';return false;">
           <div class = "preview-text">
             <img id = "opico-logo" class = "logo" src = "source/images/monsanto-logo.png">
-            <h1 onclick="document.location=this.id+'.html';return false;"> VR Planter Training Simulator </h1>
+            <h1 class = "preview-title" onclick="'intern.html';return false;"> VR Planter Training Simulator | VR Crop Data Visualization </h1>
             <h2> Job Title </h2>
             <p>UX Design Intern (2018 Summer)</p>
             <h2> Hats worn </h2>
             <p> User Study, UI/UX Design, 3D Modeling, Unity Development </p>
             <h2> Description </h2>
-            <p> Map view with emoji reaction bubbles allow the users to discover to places. </p>
+            <p> I designed the UI and task flows of a VR training simulator for Monsanto's
+            new cassette planters. Also, I worked closely with data scientists and crop scientists
+          to create 3D crop & experiment data visualization in VR. </p>
           </div>
 
         </div>
@@ -214,10 +198,10 @@
         <hr id = "within-section-line"></hr>
 
         <div class="preview" id = "p6">
-          <img id = "opicos" class = "preview-image" src="source/images/opico_main.gif" onclick="document.location=this.id+'.html';return false;">
+          <img id = "opicos" class = "preview-image" src = "source/images/hancom-main.png" onclick="document.location='intern.html';return false;">
           <div class = "preview-text">
             <img id = "opico-logo" class = "logo" src = "source/images/hancom-logo.png">
-            <h1 onclick="document.location=this.id+'.html';return false;"> Chatbot for Schedular UI </h1>
+            <h1 class = "preview-title" onclick="document.location='intern.html';return false;"> Chatbot for Schedular UI </h1>
             <h2> Job Title </h2>
             <p> Software Engineering Intern (2017 Summer)</p>
             <h2> Hats worn </h2>
@@ -228,29 +212,6 @@
 
         </div>
 
-      </section>
-
-      <hr id = "section-line"></hr>
-
-      <section id = "about">
-        <h> About </h>
-        <div class = "profile-content">
-
-          <img id = "profile-photo" src = "source/images/profile.png" style="float: left; margin: 50px 0px 10px 10px;">
-          <span id = "profile-text">
-            <br> <br> Hello, my name is Charis. Thanks for being interested in my passion and talent! 🙌
-            <br><br>I'm a passionate designer and developer who loves detail-oriented creative works.
-            Also, I'm currently a rising senior in Computer Science at the University of Illinois at Urbana-Champaign.
-            <br><br>I have been the type of person to put a lot of effort and time in choosing gifts for others.
-            What do they want? What do they have? What do they like? What do they need? Is it useful? Is it pretty? What about the price?
-            Oops, that's expensive. 🤑
-            <br><br>I think I got attracted to UX Design as it felt similar to buying a gift for someone. You have to
-            know your users, their tastes, their needs, cost and time engagement, other competitors, details, etc.
-            One thing in fact that UX Design is better than choosing a gift is that I can make what I give, instead just pursuing others' products.
-
-
-            <br></span>
-        </div>
       </section>
 
       <hr id = "section-line"></hr>
@@ -325,5 +286,11 @@
             }
         </script>
 -->
+    <script type="text/javascript">
+    var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq ||
+    {widgetcode:"e3865435d312062aa8340c76090c1429ded4bf44f0f3e89c4ff994ab6cd6ff3b", values:{},ready:function(){}};
+    var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
+    s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
+    </script>
 	</body>
 </html>
