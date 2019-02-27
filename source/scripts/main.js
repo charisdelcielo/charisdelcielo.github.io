@@ -19,9 +19,38 @@ function openNavBar() {
         menuList.style.opacity = "1";
       },350);
   }
-
 };
 
+/* navigate to about or contact through menu */
+var about = document.getElementById('about'),
+    contact = document.getElementById('contact');
+
+function gotoAbout() {
+  window.scrollTo({top: about.offsetTop, behavior: 'smooth'});
+  nav.style.width = "0";
+  menu.classList.remove("open");
+}
+
+function gotoContact() {
+  window.scrollTo({top: contact.offsetTop, behavior: 'smooth'});
+  nav.style.width = "0";
+  menu.classList.remove("open");
+}
+
+/* navigate to about or contact from other pages besides index.html */
+function gotoAboutFrom() {
+  document.location = "http://charisryu.com/";
+  window.scrollTo({top: about.offsetTop});
+  nav.style.width = "0";
+  menu.classList.remove("open");
+}
+
+function gotoContactFrom() {
+  document.location = "http://charisryu.com/";
+  window.scrollTo({top: contact.offsetTop});
+  nav.style.width = "0";
+  menu.classList.remove("open");
+}
 
 
 
@@ -55,3 +84,5 @@ document.getElementsByClassName("menu-icon").onclick = function() {
 document.getElementById("close-icon").onclick = function() {
   nav.classList.remove("opened");
 };*/
+
+/* hover over charis */

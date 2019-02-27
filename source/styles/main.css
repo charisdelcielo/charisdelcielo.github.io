@@ -129,7 +129,7 @@ section {
 }
 
 .nav__list-item {
-  margin-left: 20px;
+  margin-left: 10%;
   margin-top: 10px;
   text-decoration: none;
   font-size: 14px;
@@ -149,11 +149,12 @@ margin-top: 30px;
 margin-bottom: 20px;
 }
 
-#list1Link, #list2Link {
+#list1Link, #list2Link, #list3Link  {
+  margin-left: 10%;
+  margin-bottom: 5%;
   font-size: 15px;
   font-weight: 600;
 }
-
 
 /* intro */
 #intro {
@@ -166,10 +167,23 @@ margin-bottom: 20px;
 
 #second_line {
   font-size: 25px;
-  margin-bottom: 330px;
+  margin-bottom: 320px;
   display: block;
 }
 
+#charis {
+  cursor: pointer;
+  display:block;
+  width: 50%;
+  height: auto;
+  margin-left: 40%;
+}
+
+
+#hover-text {
+  text-align: right;
+  margin-right: 20%;
+}
 
 /* works */
 #opico-apple, #opico-android{
@@ -211,7 +225,7 @@ h2 {
 
 
 .preview-text {
-  margin-top: 5%;
+  margin-top: 8%;
   flex: 40%;
 }
 
@@ -410,4 +424,23 @@ footer {
   margin-left: 0%;
   font-size: 14px;
   margin-top: 4%;
+}
+
+#mail, #phone {
+  width: 30px;
+  background-color: #e74c3c;
+}
+
+.info span {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+#contact-bottom {
+  margin-bottom: 20%;
+}
+
+#contact-content {
+  width: 100%;
+  margin-left: 10%;
 }

@@ -28,12 +28,12 @@
           <li class="nav__list-item" id = "project5Link" onclick="document.location='spotibuddi.html';return false;">Spotibuddi</li>
     			<li class="nav__list-item" id = "project6Link" onclick="document.location='dribbblebubble.html';return false;">Dribbble Bubble!</li>
           <hr></hr>
-          <h2 id = "list2Link">Past Internships</h2>
+          <h2 id = "list3Link">Past Internships</h2>
           <li class="nav__list-item" id = "project5Link" onclick="document.location='intern.html';return false;">UX Designer (2018)</li>
     			<li class="nav__list-item" id = "project6Link" onclick="document.location='intern.html';return false;">Software Engineer (2017)</li>
           <hr></hr>
-          <li class="nav__list-item" id = "aboutLink">About</li>
-          <li class="nav__list-item" id = "contactLink">Contact</li>
+          <li class="nav__list-item" id = "aboutLink" onclick="gotoAbout()">About</li>
+          <li class="nav__list-item" id = "contactLink" onclick="gotoContact()">Contact</li>
     		</ul>
     	</nav>
 
@@ -41,7 +41,10 @@
 
       <section id = "intro">
         <span> Hello, I'm Charis.</span>
-      <span id = "second_line"> <br>I design & develop.<br> </span>
+        <span id = "second_line"> <br>I design & develop.<br> </span>
+        <p id = "hover-text" style = "font-family : Open Sans; font-size: 15px;"> Hover over me! </p>
+        <img title = "Charis" id = "charis" src = "/source/images/Group1.png"
+        onmouseover = "this.src= '/source/images/Group2.png'" onmouseout = "this.src= '/source/images/Group1.png'" >
 
         <!--<button type = "button"> Download my resume! </button>-->
 
@@ -136,7 +139,7 @@
             <h2> Hats worn </h2>
             <p> User Study, UI/UX Design, UI Development (Android Studio) </p>
             <h2> Description </h2>
-            <p> $plit is a delivery-fee sharing + ordering app mainly targeting broke college kids. </p>
+            <p> $plit is a delivery-fee sharing + ordering app mainly targeting broke college kids like me. </p>
           </div>
 
         </div>
@@ -179,10 +182,10 @@
         <hr id = "within-section-line"></hr>
 
         <div class="preview" id = "p6">
-          <img id = "opicos" class = "preview-image" src="source/images/vr1.png" onclick="document.location='intern.html';return false;">
+          <img id = "opicos" class = "preview-image" src="source/images/vr1.png" >
           <div class = "preview-text">
             <img id = "opico-logo" class = "logo" src = "source/images/monsanto-logo.png">
-            <h1 class = "preview-title" onclick="'intern.html';return false;"> VR Planter Training Simulator | VR Crop Data Visualization </h1>
+            <h1 class = "preview-title" <onclick="'intern.html';return false;"> VR Planter Training Simulator | VR Crop Data Visualization </h1>
             <h2> Job Title </h2>
             <p>UX Design Intern (2018 Summer)</p>
             <h2> Hats worn </h2>
@@ -218,6 +221,24 @@
 
       <section id = "contact">
         <h> contact </h>
+        <div id = "contact-content">
+          <p style = "font-weight: 300;"> If you're interested in my work, got a question to ask, or literally anything, please
+            contact me with the information below. Thanks :) </p>
+
+            <br>
+            <br>
+            <br>
+
+            <div class = "info">
+              <img style="vertical-align:middle" src = "/source/images/smartphone.svg" id = "phone">
+              <span> &nbsp;(773) 817-3590 </span>
+            </div>
+            <br>
+            <div class = "info" id = "contact-bottom">
+              <img style="vertical-align:middle" src = "/source/images/mail.svg" id = "mail">
+              <span> &nbsp;chaewonryu@gmail.com </span>
+            </div>
+          </div>
       </section>
 
 
