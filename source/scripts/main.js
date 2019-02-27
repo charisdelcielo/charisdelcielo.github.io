@@ -26,27 +26,26 @@ var about = document.getElementById('about'),
     contact = document.getElementById('contact');
 
 function gotoAbout() {
-  window.scrollTo({top: about.offsetTop, behavior: 'smooth'});
+  window.scrollTo({top: about.offsetTop});
   nav.style.width = "0";
   menu.classList.remove("open");
 }
 
 function gotoContact() {
-  window.scrollTo({top: contact.offsetTop, behavior: 'smooth'});
+  window.scrollTo({top: contact.offsetTop});
   nav.style.width = "0";
   menu.classList.remove("open");
 }
 
 /* navigate to about or contact from other pages besides index.html */
 function gotoAboutFrom() {
-  document.location = "http://charisryu.com/";
-  window.scrollTo({top: about.offsetTop});
+  document.location = "http://charisryu.com/index.html#about";
   nav.style.width = "0";
   menu.classList.remove("open");
 }
 
 function gotoContactFrom() {
-  document.location = "http://charisryu.com/";
+  document.location = "http://charisryu.com/index.html#contact";
   window.scrollTo({top: contact.offsetTop});
   nav.style.width = "0";
   menu.classList.remove("open");

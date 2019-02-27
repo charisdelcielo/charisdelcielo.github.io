@@ -20,33 +20,40 @@
 
     <nav id = "navigation">
       <ul id = "horizontal-list">
-          <li class="nav__list-item" id = "list1Link">User Experience</li>
+          <h2 id = "list1Link">User Experience</h2>
     			<li class="nav__list-item" id = "project1Link" onclick="document.location='opico.html';return false;">opico</li>
-    			<li class="nav__list-item" id = "project2Link">$plit</li>
+    			<li class="nav__list-item" id = "project2Link" onclick="document.location='split.html';return false;">$plit</li>
           <hr></hr>
-          <li class="nav__list-item" id = "list2Link">Data Visualization</li>
-          <li class="nav__list-item" id = "project5Link">Spotibuddi</li>
-    			<li class="nav__list-item" id = "project6Link">Dribbble Bubble!</li>
+          <h2 id = "list2Link">Data Visualization</h2>
+          <li class="nav__list-item" id = "project5Link" onclick="document.location='spotibuddi.html';return false;">Spotibuddi</li>
+    			<li class="nav__list-item" id = "project6Link" onclick="document.location='dribbblebubble.html';return false;">Dribbble Bubble!</li>
           <hr></hr>
-          <li class="nav__list-item" id = "list2Link">Past Internships</li>
-          <li class="nav__list-item" id = "project5Link">UX Designer (2018)</li>
-    			<li class="nav__list-item" id = "project6Link">Software Engineer (2017)</li>
+          <h2 id = "list3Link">Past Internships</h2>
+          <li class="nav__list-item" id = "project5Link" onclick="document.location='intern.html';return false;">UX Designer (2018)</li>
+    			<li class="nav__list-item" id = "project6Link" onclick="document.location='intern.html';return false;">Software Engineer (2017)</li>
           <hr></hr>
-          <li class="nav__list-item" id = "aboutLink">About</li>
-          <li class="nav__list-item" id = "contactLink">Contact</li>
+          <li class="nav__list-item" id = "aboutLink" onclick="gotoAboutFrom()">About</li>
+          <li class="nav__list-item" id = "contactLink" onclick="gotoContactFrom()">Contact</li>
     		</ul>
     	</nav>
 
-      <body>
-        <script src="source/scripts/main.js" type="text/javascript"></script>
+    <body>
 
-        <script type="text/javascript">
-          var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq ||
-          {widgetcode:"e3865435d312062aa8340c76090c1429ded4bf44f0f3e89c4ff994ab6cd6ff3b", values:{},ready:function(){}};
-          var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
-          s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
-          </script>
+      <img class ="meme" src = "https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif">
+      <br>
+      <p style = "text-align:center"> This page will be updated soon! Please check out my other projects. </p>
+      <br>
+      <script src="source/scripts/main.js" type="text/javascript"></script>
 
-      </body>  
+
+      <script src="source/scripts/main.js" type="text/javascript"></script>
+
+      <script type="text/javascript">
+        var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq ||
+        {widgetcode:"e3865435d312062aa8340c76090c1429ded4bf44f0f3e89c4ff994ab6cd6ff3b", values:{},ready:function(){}};
+        var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
+        s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
+      </script>
+    </body>
 
 </html>

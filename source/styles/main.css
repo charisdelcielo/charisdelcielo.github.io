@@ -215,6 +215,11 @@ h2 {
   cursor: pointer;
 }
 
+#split-logo {
+  width: 50px;
+  height: auto;
+}
+
 
 .preview {
   width: 100%;
@@ -443,4 +448,21 @@ footer {
 #contact-content {
   width: 100%;
   margin-left: 10%;
+}
+
+#dribbble-page video {
+  width: 95%;
+  margin-bottom: 5%;
+}
+
+#dribbble-mockups {
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.meme {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
 }
