@@ -19,51 +19,94 @@
     </div>
 
     <nav id = "navigation">
-      <ul id = "horizontal-list">
-          <h2 id = "list1Link">User Experience</h2>
-    			<li class="nav__list-item" id = "project1Link" onclick="document.location='opico.html';return false;">opico</li>
-    			<li class="nav__list-item" id = "project2Link" onclick="document.location='split.html';return false;">$plit</li>
-          <hr></hr>
-          <h2 id = "list2Link">Data Visualization</h2>
-          <li class="nav__list-item" id = "project5Link" onclick="document.location='spotibuddi.html';return false;">Spotibuddi</li>
-    			<li class="nav__list-item" id = "project6Link" onclick="document.location='dribbblebubble.html';return false;">Dribbble Bubble!</li>
-          <hr></hr>
-          <h2 id = "list3Link">Past Internships</h2>
-          <li class="nav__list-item" id = "project5Link" onclick="document.location='intern.html';return false;">UX Designer (2018)</li>
-    			<li class="nav__list-item" id = "project6Link" onclick="document.location='intern.html';return false;">Software Engineer (2017)</li>
-          <hr></hr>
-          <li class="nav__list-item" id = "aboutLink" onclick="gotoAboutFrom()">About</li>
-          <li class="nav__list-item" id = "contactLink" onclick="gotoContactFrom()">Contact</li>
-    		</ul>
-    	</nav>
+        <ul id = "horizontal-list">
+            <h2 id = "list1Link">User Experience</h2>
+      			<li class="nav__list-item" id = "project1Link" onclick="document.location='opico.html';return false;">opico</li>
+      			<li class="nav__list-item" id = "project2Link" onclick="document.location='split.html';return false;">$plit</li>
+            <hr></hr>
+            <h2 id = "list2Link">Data Visualization</h2>
+            <li class="nav__list-item" id = "project5Link" onclick="document.location='spotibuddi.html';return false;">Spotibuddi</li>
+      			<li class="nav__list-item" id = "project6Link" onclick="document.location='dribbblebubble.html';return false;">Dribbble Bubble!</li>
+            <hr></hr>
+            <h2 id = "list3Link">Past Internships</h2>
+            <li class="nav__list-item" id = "project5Link" onclick="document.location='index.html#monsanto-intern';return false;">UX Designer (2018)</li>
+      			<li class="nav__list-item" id = "project6Link" onclick="document.location='index.html#hancom-intern';return false;">Software Engineer (2017)</li>
+            <hr></hr>
+            <li class="nav__list-item" id = "aboutLink" onclick="gotoAbout()">About</li>
+            <li class="nav__list-item" id = "contactLink" onclick="gotoContact()">Contact</li>
+      		</ul>
+      	</nav>
 
-  <body>
+  <body id = "split-page">
+    <section class = "subproject">
+      <h class = "title"> $plit </h>
+      <div class = "subheadtitle"> split your delivery fee with your neighbors</div>
+      <img class = "head-image" src = "/source/images/split_main.png" alt = "gif demo goes here">
+      <div class = "brief-info">
+        <h2> Overview </h2>
+        <div class = "body-text">
+          $plit provides a service for college students or any other users in similar finantial or habitual situation
+           to split delivery fee with other users in the same area unit by adding your order to an existing order.
+        </div>
+        <h2> My role </h2>
+        <div class = "body-text"> UI/UX Design, Prototyping, User Study</div>
+        <h2> Duration </h2>
+        <div class = "body-text"> 6mo (2018) </div>
+        <div class = "subtitle"> Problem Identified </div>
+        <div class = "body-text">
+          The problem that I tried to target is the unnecessary hiked up delivery fees
+          that many food company charges.
+          Very often, college students order food and have
+          it delivered due to distance, convenience, or just pure laziness.
+          Also, very few people on college campuses own cars, and thus they tend to use food delivery services frequently,
+           thus providing us with even more opportunity.
+           People that live in a community are less than likely to knock on their neighbors door
+           and ask them to order food together.
 
-    PROBLEM & RESEARCH
-          The problem that my team is trying to target is the unnecessary hiked up delivery fees that every food company charges. Very often, college students order food and have it delivered due to distance, convenience, or just pure laziness. Also, very few people on college campuses own cars, and thus they tend to use food delivery services frequently, thus providing us with even more opportunity. People that live in a community are less than likely to knock on their neighbors door and ask them to order food together. However, our application changes that social situation to make it more friendly. Our mobile application aims to reduce that cost so they can eat without making a hole in their pocket. People will be motivated to use our application because college students are looking for any way to save money. Grouping people by their location will increase their chances of saving money on delivery fees without compromising meals. A user does not have to wait or convince their friends  to order food with them when they have a set of friendly peers near them that are on board.
+         </div>
 
-Existing Solutions?
-          1. Joyrun - JoyRun tries to do what we do however, they still charge a “runner’s fee” that is still pricey for a delivery fee.  The only thing I can imagine is that when a person orders food for all their friends they are able to split the price among themselves. Our idea implements that concept but reaches out to your peers whom you may not be acquainted with so you don’t have to wait for your friends to order a meal.
-          2. Facebook - Some might consider Facebook a potential competitor because it’s a social networking application that includes messaging. However, we do not consider that a competitor as there are serious privacy and security concerns if people are sharing their location with one another if they do not actually know each other. Our application makes that process easy and has zero privacy concerns as we do not reveal the customer’s location to the other. Another limitation of Facebook is that people you know on Facebook do not necessarily live close to you, so order aggregation would not be feasible.
+         <div class = "subtitle"> Existing Platforms, Exisitng Problems</div>
+         <div class = "body-text">
+           1. Joyrun - JoyRun tries to do what we do however,
+           they still charge a “runner’s fee” that is still pricey for a delivery fee.
 
-Problem with these?
-          Conventionally, when students want to order food, they might confer with other nearby students or friends. They would use social media platforms such as Facebook or the messenger to combine their food orders with their nearby friends. This is especially common among those living in dorms. They would order food, split the bill according to who order what, and share the delivery fee which is trivial with large groups. One problem with this solution is that it takes time to find other people with the same food preference. One group might want pizza and another might want Chinese. Our app would discard the unnecessary time that manually searching would require. Another problem is that students would have to be close enough to confer about ordering food. Our app trivializes that restriction by finding groups that are nearby, but could be on a different floor of the same building or even in another building nearby. And also, the students who use this method must have a big enough social circle to find people who are ordering at the same time and the same company, this limits the students who have a smaller circle of friends. Our app allows users to connect to strangers nearby, as long as they share common characteristics that would allow them to combine their orders. Through our platform, our users would be able to save their delivery fee without knowing anyone in the campus.
-SOLUTION
-          Our team found it unnecessary for people who live near each other to pay for the delivery fee twice/multiple times. To address to this problem, we have proposed a delivery-fee-sharing app that allows users who live nearby to combine their orders via our app, thus allowing them to save money. Our users would list the exact time of their order and the name of the company that they want food from. Then our app would use the users’ locations and the information that they gave us above to sort the ideal list of people to share the delivery fee. After the users pair themselves up, they pay via our app , and we will pay the food company. The users are allowed to cancel their orders before a certain time with no additional cost. After that certain time though, they will be charged 30% of their order. This additional money will bring profit to our app and also guarantee that even if one person cancels their order, the other people who are sharing their delivery fee with that certain user will still save their portion of delivery fee. For example, A was supposed to save $2 of delivery fee . Even if A’s order sharer B canceled his order, A will still get that $2 from  B’s 30% additional late cancellation fee.
+           <br> 2. Facebook - Some might consider Facebook a potential competitor
+           because it’s a social networking application that includes messaging.
+           However, there are serious privacy and security concerns if people are sharing
+           their location with one another if they do not actually know each other.
+           <br> Another limitation of Facebook is that people you know on
+           Facebook do not necessarily live close to you, so order aggregation would not be feasible.
+         </div>
+        <div class = "subtitle"> High Level Goals </div>
+        <div class = "body-text">
+          <br>-Design a very detailed user flow for users to use our system to best save their delivery fees
+          <br>-Design the user experience with which the users can have no privacy concerns regarding personal / location information
 
-USER RESEARCH
-          We first created three user archetypes for our app and conducted user interviews with potential users who fit in each archetype.
-
-USER ARCHETYPES
-• Unsatisfied freshmen: Students that live in dorms that are not satisfied with their meal plan that resort to delivering outside food
-• Off-campus night-owls: Students that stay up late studying or partying that want a meal at an unusual time
-• Broke New-Yorkers: People living a fast-paced lifestyle that don’t have time to drive into the city and don’t have money to spend on unnecessary fees
-
-PROTOTYPES & EVALUATION
+        </div>
+        <div class = "subtitle"> User Study </div>
+        <div class = "body-text">
+          I created three user archetypes for our app and conducted
+          user interviews with potential users who fit in each archetype.
+          <br><br>
+          <b>USER ARCHETYPES</b>
+          • Unsatisfied freshmen: Students that live in dorms that are not satisfied with their meal plan that resort to delivering outside food
+          <br>• Off-campus night-owls: Students that stay up late studying or partying that want a meal at an unusual time
+          <br>• Broke New-Yorkers: People living a fast-paced lifestyle that don’t have time to drive into the city and don’t have money to spend on unnecessary fees
+        </div>
+        <img id = "opicos" class = "head-image" src="source/images/redesign_preview.png">
+        <div class = "subtitle"> Design Process </div>
+        <div class = "body-text">
           After conducting user research and creating task scenarios, we created prototypes (lo-fi & functional) for three main tasks -- Registration, Start/Add Order (based on user preference), Cancel Order.
+        </div>
+        <div class = "body-text"> <b> lofi-mockups </b>
+        <img id = "opicos" class = "head-image" src="source/images/split_lowfi1.png">
+        <img id = "opicos" class = "head-image" src="source/images/split_lowfi2.png">
+
+        <img id = "opicos" class = "head-image" src="source/images/split_balsamiq2.png">
+
+    </section>
 
 
-    <script src="source/scripts/main.js" type="text/javascript"></script>
 
 
     <script src="source/scripts/main.js" type="text/javascript"></script>
