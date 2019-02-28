@@ -51,6 +51,7 @@ section {
 	        transition: all 0.3s;
 }
 
+
 .menu-icon > span {
   position: absolute;
   display: block;
@@ -105,6 +106,17 @@ section {
   top: 0;
   left: 0;
   height: auto;
+}
+
+#overlay-space {
+  height: 600%;
+  width: 100%;
+  opacity: 50;
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding: 0;
+  background-color: pink;
 }
 
 
@@ -181,6 +193,7 @@ margin-bottom: 20px;
 
 
 #hover-text {
+  display:none;
   text-align: right;
   margin-right: 20%;
 }

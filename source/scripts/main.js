@@ -33,7 +33,7 @@ function openNavBar() {
     }
 
     else {
-      nav.style.width = "620px";
+      nav.style.width = "100%";
       menu.classList.add("open");
       setTimeout(function(){
           menuList.style.opacity = "1";
