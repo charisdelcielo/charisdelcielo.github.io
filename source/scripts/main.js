@@ -6,19 +6,42 @@ var menuList = document.getElementById("horizontal-list");
 var offsetMenu = menu.offsetTop;
 
 function openNavBar() {
-  if (menu.classList.contains("open")) {
-    menuList.style.opacity = "0.5"
-    nav.style.width = "0";
-    menu.classList.remove("open");
+
+  var width = window.innerWidth;
+
+  if (window.innerWidth > 600) {
+    if (menu.classList.contains("open")) {
+      menuList.style.opacity = "0.5"
+      nav.style.width = "0";
+      menu.classList.remove("open");
+    }
+
+    else {
+      nav.style.width = "270px";
+      menu.classList.add("open");
+      setTimeout(function(){
+          menuList.style.opacity = "1";
+      }, 350);
+    }
   }
 
   else {
-    nav.style.width = "270px";
-    menu.classList.add("open");
-    setTimeout(function(){
-        menuList.style.opacity = "1";
-      },350);
+    if (menu.classList.contains("open")) {
+      menuList.style.opacity = "0.5"
+      nav.style.width = "0";
+      menu.classList.remove("open");
+    }
+
+    else {
+      nav.style.width = "620px";
+      menu.classList.add("open");
+      setTimeout(function(){
+          menuList.style.opacity = "1";
+        },350);
+    }
+
   }
+
 };
 
 /* navigate to about or contact through menu */
